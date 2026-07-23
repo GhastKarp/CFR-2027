@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RPA0609101M025B'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kyocera AVX", "RPA0609101M025B" (!) = "", "CAPPRD250W55D630H1050", "Capacitor, Polarized Radial Diameter", "581-RPA0609101M025B", "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/RPA0609101M025B?qs=Y0Uzf4wQF3lzEzQngFxXQA%3D%3D", "", "", "Aluminum Organic Polymer Capacitors 25V 100uF 0609 ESR=30mOhms", "https://datasheets.kyocera-avx.com/rpa-series.pdf", "10.5 mm"
+END_PART
+
+END.

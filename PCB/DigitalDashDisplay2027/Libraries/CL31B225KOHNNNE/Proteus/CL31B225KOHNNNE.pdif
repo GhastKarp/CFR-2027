@@ -1,0 +1,103 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "CL31B225KOHNNNE"
+   (description "Samsung Electro-Mechanics 1206 (3216M) 2.2uF Multilayer Ceramic Capacitor MLCC 16V dc +/-10% SMD CL31B225KOHNNNE")
+   (family "CAP")
+   (package "CAPC3216X180N")
+   (attribute "Datasheet Link" "")
+   (attribute "Geometry.Height" "1.8mm")
+   (attribute "Mouser Part Number" "187-CL31B225KOHNNNE")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL31B225KOHNNNE?qs=349EhDEZ59qnc9OUaaCJmg%3D%3D")
+   (attribute "Manufacturer_Name" "SAMSUNG")
+   (attribute "Manufacturer_Part_Number" "CL31B225KOHNNNE")
+   (gate
+    (symbol "CL31B225KOHNNNE")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "CL31B225KOHNNNE"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 220 100) (pt 220 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 0) (pt 220 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "CAPC3216X180N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.065 1.06)
+      (pt 2.065 1.06)
+      (pt 2.065 -1.06)
+      (pt -2.065 -1.06)
+      (pt -2.065 1.06))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.6 0.8)
+      (pt 1.6 0.8)
+      (pt 1.6 -0.8)
+      (pt -1.6 -0.8)
+      (pt -1.6 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 0.7)
+      (pt 0 -0.7))))
+   (leg 1 (pt -1.39 0) (padstack 0))
+   (leg 2 (pt 1.39 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.05 1.82 0 0 90))
+   )
+   (model "CL31B225KOHNNNE.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

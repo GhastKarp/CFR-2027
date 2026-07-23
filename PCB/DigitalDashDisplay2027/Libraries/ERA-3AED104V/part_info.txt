@@ -1,0 +1,9 @@
+Manufacturer=Panasonic
+PartNumber=ERA-3AED104V
+PartCategory=Resistor
+PackageCategory=Other
+PinCount=2
+Version=4.2
+Released=2023-03-07 09:34:24
+Downloaded=2025-05-13 05:14:10
+3D=Y

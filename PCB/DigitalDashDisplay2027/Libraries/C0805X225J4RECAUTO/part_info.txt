@@ -1,0 +1,9 @@
+Manufacturer=KEMET
+PartNumber=C0805X225J4RECAUTO
+PartCategory=Capacitor
+PackageCategory=Other
+PinCount=2
+Version=6.1
+Released=2022-02-12 14:00:30
+Downloaded=2025-10-24 20:43:30
+3D=Y

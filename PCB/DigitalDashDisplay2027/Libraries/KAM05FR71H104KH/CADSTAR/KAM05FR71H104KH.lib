@@ -1,0 +1,18 @@
+.KAM05FR71H104KH :1 ;0.1 F +/-10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)
+CAPC1005X56N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN KAM05FR71H104KH
+~!Manufacturer_Name (Kyocera AVX)
+~!Manufacturer_Part_Number (KAM05FR71H104KH)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf)
+~!Height (0.56mm)
+~!3D_Model (KAM05FR71H104KH)
+KAM05FR71H104KH
+1.1!U 2.1!U 

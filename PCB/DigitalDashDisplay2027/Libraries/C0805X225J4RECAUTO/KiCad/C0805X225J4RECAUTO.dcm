@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C0805X225J4RECAUTO
+D ESD SMD Auto X7R, Ceramic, 2.2 uF, 5%, 16 VDC, 40 VDC, 125C, -55C, X7R, SMD, MLCC, Temperature Stable, Electro Static Discharge, Automotive Grade, 3.5 % , 227.3 MOhms, 21 mg, 0805, 2mm, 1.25mm, 1.25mm, 0.75mm, 0.5mm, 2500, 78  Weeks, 80
+K
+F https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf
+$ENDCMP
+#
+#End Doc Library

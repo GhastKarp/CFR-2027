@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1206W4J0103T5E'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "UNI-ROYAL(Uniroyal Elec)", "1206W4J0103T5E" (!) = "", "RESC3116X65N", "Resistor Chip", "", "", "", "", "10K +/-5% 1/4W 1206 Chip Resistor - Surface Mount RoHS", "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4J0103T5E_C1489.pdf", "0.65 mm"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+Manufacturer=SAMSUNG
+PartNumber=CL32A226KOJNNNE
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=1.1
+Released=2021-12-18 07:42:48
+Downloaded=2025-10-24 21:57:31
+3D=Y

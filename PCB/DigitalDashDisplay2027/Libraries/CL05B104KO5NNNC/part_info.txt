@@ -1,0 +1,9 @@
+Manufacturer=SAMSUNG
+PartNumber=CL05B104KO5NNNC
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=2.1
+Released=2019-04-17 09:31:51
+Downloaded=2025-10-23 16:47:43
+3D=Y

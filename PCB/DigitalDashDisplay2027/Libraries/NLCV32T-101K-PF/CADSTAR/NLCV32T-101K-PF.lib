@@ -1,0 +1,16 @@
+.NLCV32T-101K-PF :1 ;TDK - NLCV32T-101K-PF - High Frequency Inductor, 100 H, NLCV Series, 120 mA, 1210 [3225 Metric], Wirewound, 3.7 ohm
+INDM3225X240N
+*STM L
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN NLCV32T-101K-PF
+~!Mouser Part Number (810-NLCV32T-101K)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TDK/NLCV32T-101K-PF?qs=stv2FWaTEl%252Bc4r1Vm288kQ%3D%3D)
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (NLCV32T-101K-PF)
+~!Link Datasheet (https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_nlcv32-pf_en.pdf)
+~!Height (2.4mm)
+~!3D_Model (NLCV32T-101K-PF)
+NLCV32T-101K-PF
+1.1!U 2.1!U 

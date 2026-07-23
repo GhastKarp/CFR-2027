@@ -1,0 +1,116 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "B82442T1104K050"
+   (description "EPCOS SIMID Series Type 2220 Wire-wound SMD Inductor with a Ferrite Core, 100 uH Wire-Wound 510mA Idc Q:20")
+   (family "IND")
+   (package "INDPM5650X530N")
+   (attribute "Datasheet Link" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/data_sheet/30/db/ind_2008/b82442t.pdf")
+   (attribute "Geometry.Height" "5.3mm")
+   (attribute "Manufacturer_Name" "TDK")
+   (attribute "Manufacturer_Part_Number" "B82442T1104K050")
+   (attribute "Mouser Part Number" "871-B82442T1104K050")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B82442T1104K050?qs=x3Z3TaiycduVzHqGgYB07A%3D%3D")
+   (attribute "Arrow Part Number" "B82442T1104K050")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/b82442t1104k050/epcos-tdk")
+   (gate
+    (symbol "B82442T1104K050")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "B82442T1104K050"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 200 0) (pt 200 -52) (pt 300 48) (start -175.4) (sweep 177.7)) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 300 0) (pt 300 -52) (pt 400 48) (start -175.4) (sweep 177.7)) (pt 400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 400 0) (pt 400 -52) (pt 500 48) (start -175.4) (sweep 177.7)) (pt 500 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 500 0) (pt 500 -52) (pt 600 48) (start -175.4) (sweep 177.7)) (pt 600 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "INDPM5650X530N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.7 2.9)
+      (pt 3.7 2.9)
+      (pt 3.7 -2.9)
+      (pt -3.7 -2.9)
+      (pt -3.7 2.9))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.8 2.5)
+      (pt 2.8 2.5)
+      (pt 2.8 -2.5)
+      (pt -2.8 -2.5)
+      (pt -2.8 2.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 2.8 2.5)
+      (pt -2.8 2.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.8 -2.5)
+      (pt 2.8 -2.5))))
+   (leg 1 (pt -2.6 0) (padstack 0))
+   (leg 2 (pt 2.6 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.7 3.55 0 0 90))
+   )
+   (model "B82442T1104K050.stp"
+    (euler 90 0 0)
+    (offset -5 0 1.0700000524520874)
+   )
+  )
+ )
+)

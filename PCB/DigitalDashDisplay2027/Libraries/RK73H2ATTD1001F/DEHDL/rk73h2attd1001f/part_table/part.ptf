@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RK73H2ATTD1001F'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KOA Speer", "RK73H2ATTD1001F" (!) = "", "RESC2012X60N", "Resistor Chip", "660-RK73H2ATTD1001F", "https://www.mouser.co.uk/ProductDetail/KOA-Speer/RK73H2ATTD1001F?qs=jqs4VlA0UkhWNsyvWbhZPg%3D%3D", "RK73H2ATTD1001F", "https://www.arrow.com/en/products/rk73h2attd1001f/koa-speer-electronics?region=nac", "Thick Film Resistors - SMD 1/8watts 1Kohms 1%", "http://www.koaspeer.com/catimages/Products/RK73H/RK73H.pdf", "0.6 mm"
+END_PART
+
+END.

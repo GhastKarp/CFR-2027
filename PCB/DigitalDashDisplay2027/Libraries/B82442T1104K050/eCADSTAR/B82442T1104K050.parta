@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_357323"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-07-09:50:21)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "B82442T1104K050")
+)
+
+
+(pinAssign "ECS_357323"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-07-09:50:21)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_357323")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "B82442T1104K050")
+)
+
+
+(part "B82442T1104K050"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-05-07-09:50:21)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "B82442T1104K050")
+    (pinAssignRef "ECS_357323")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "L")
+    (property "description" "EPCOS SIMID Series Type 2220 Wire-wound SMD Inductor with a Ferrite Core, 100 uH Wire-Wound 510mA Idc Q:20")
+    (property "Manufacturer_Name" "TDK")
+    (property "Manufacturer_Part_Number" "B82442T1104K050")
+    (property "Mouser_Part_Number" "871-B82442T1104K050")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B82442T1104K050?qs=x3Z3TaiycduVzHqGgYB07A%3D%3D")
+    (property "Arrow_Part_Number" "B82442T1104K050")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/b82442t1104k050/epcos-tdk")
+    (property "Datasheet_Link" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/data_sheet/30/db/ind_2008/b82442t.pdf")
+    (property "compAreaTopHeight" 5.3)
+)
+
+

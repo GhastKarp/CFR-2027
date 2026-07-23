@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "LMR51430YDDCR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-04-24-05:45:18)
+    (mountForm default
+        (footprintRef "SOT95P280X110-6N")
+        (spec "System")
+    )
+)

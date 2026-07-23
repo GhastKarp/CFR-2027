@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_558058"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-11:16:29)
+    (utime 2023-03-07-11:16:29)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RK73H2ATTD1001F")
+)
+
+
+(pinAssign "ECS_558058"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-11:16:29)
+    (utime 2023-03-07-11:16:29)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_558058")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RK73H2ATTD1001F")
+)
+
+
+(part "RK73H2ATTD1001F"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-11:16:29)
+    (utime 2023-03-07-11:16:29)
+    (packageRef "RK73H2ATTD1001F")
+    (pinAssignRef "ECS_558058")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "Thick Film Resistors - SMD 1/8watts 1Kohms 1%")
+    (property "Manufacturer_Name" "KOA Speer")
+    (property "Manufacturer_Part_Number" "RK73H2ATTD1001F")
+    (property "Mouser_Part_Number" "660-RK73H2ATTD1001F")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/KOA-Speer/RK73H2ATTD1001F?qs=jqs4VlA0UkhWNsyvWbhZPg%3D%3D")
+    (property "Arrow_Part_Number" "RK73H2ATTD1001F")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/rk73h2attd1001f/koa-speer-electronics?region=nac")
+    (property "Datasheet_Link" "http://www.koaspeer.com/catimages/Products/RK73H/RK73H.pdf")
+    (property "compAreaTopHeight" 0.6)
+)
+
+

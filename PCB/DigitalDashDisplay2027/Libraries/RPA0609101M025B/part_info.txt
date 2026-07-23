@@ -1,0 +1,9 @@
+Manufacturer=Kyocera AVX
+PartNumber=RPA0609101M025B
+PartCategory=Capacitor Polarised
+PackageCategory=Capacitor, Polarized Radial Diameter
+PinCount=2
+Version=1.1
+Released=2023-11-24 08:25:37
+Downloaded=2026-05-20 19:22:30
+3D=Y

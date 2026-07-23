@@ -1,0 +1,9 @@
+Manufacturer=SAMSUNG
+PartNumber=CL31B225KOHNNNE
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=1.1
+Released=2024-12-26 14:53:56
+Downloaded=2025-10-24 22:29:05
+3D=Y

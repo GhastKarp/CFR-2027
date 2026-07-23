@@ -1,0 +1,93 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "1206W4J0103T5E"
+   (description "10K +/-5% 1/4W 1206 Chip Resistor - Surface Mount RoHS")
+   (family "RES")
+   (package "RESC3116X65N")
+   (attribute "Datasheet Link" "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4J0103T5E_C1489.pdf")
+   (attribute "Geometry.Height" "0.65mm")
+   (attribute "Manufacturer_Name" "UNI-ROYAL(Uniroyal Elec)")
+   (attribute "Manufacturer_Part_Number" "1206W4J0103T5E")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "1206W4J0103T5E")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "1206W4J0103T5E"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 50) (pt 500 50) (pt 500 -50) (pt 200 -50) (pt 200 50) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RESC3116X65N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.225 1.15)
+      (pt 2.225 1.15)
+      (pt 2.225 -1.15)
+      (pt -2.225 -1.15)
+      (pt -2.225 1.15))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.55 0.788)
+      (pt 1.55 0.788)
+      (pt 1.55 -0.788)
+      (pt -1.55 -0.788)
+      (pt -1.55 0.788))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 0.688)
+      (pt 0 -0.688))))
+   (leg 1 (pt -1.45 0) (padstack 0))
+   (leg 2 (pt 1.45 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.05 1.75 0 0 90))
+   )
+   (model "1206W4J0103T5E.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DAQ2027Lib")(type "KiCad")(uri "C:/Users/karpy/OneDrive/Desktop/CFR/DAQBoards2027/Libraries/Symbols/DAQ2027Lib.kicad_sym")(options "")(descr ""))
+)

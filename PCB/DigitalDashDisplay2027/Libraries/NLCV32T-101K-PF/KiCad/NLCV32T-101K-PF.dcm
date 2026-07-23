@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NLCV32T-101K-PF
+D TDK - NLCV32T-101K-PF - High Frequency Inductor, 100 H, NLCV Series, 120 mA, 1210 [3225 Metric], Wirewound, 3.7 ohm
+K
+F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_nlcv32-pf_en.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_2054902"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-10:42:08)
+    (utime 2023-03-07-10:42:08)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "ERJ-3EKF1372V")
+)
+
+
+(pinAssign "ECS_2054902"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-10:42:08)
+    (utime 2023-03-07-10:42:08)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_2054902")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "ERJ-3EKF1372V")
+)
+
+
+(part "ERJ-3EKF1372V"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-03-07-10:42:08)
+    (utime 2023-03-07-10:42:08)
+    (packageRef "ERJ-3EKF1372V")
+    (pinAssignRef "ECS_2054902")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "Precision Thick Film Chip Resistor, 0603, 0.1W")
+    (property "Mouser_Part_Number" "667-ERJ-3EKF1372V")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/ERJ-3EKF1372V?qs=H7k1u0Mp9JQD7E9NX1VlCQ%3D%3D")
+    (property "Manufacturer_Name" "Panasonic")
+    (property "Manufacturer_Part_Number" "ERJ-3EKF1372V")
+    (property "Datasheet_Link" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

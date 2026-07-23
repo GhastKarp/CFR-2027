@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PA4341.682ANLT
+D Fixed Inductors 6.8uH 4.5A 3mm 20% SMT
+K
+F https://products.pulseelex.com/files/product_files/P820.pdf
+$ENDCMP
+#
+#End Doc Library

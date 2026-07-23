@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_17231942"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-11-24-08:25:37)
+    (utime 2024-04-02-12:57:52)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RPA0609101M025B")
+)
+
+
+(pinAssign "ECS_17231942"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-11-24-08:25:37)
+    (utime 2024-04-02-12:57:52)
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_17231942")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RPA0609101M025B")
+)
+
+
+(part "RPA0609101M025B"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-11-24-08:25:37)
+    (utime 2024-04-02-12:57:52)
+    (packageRef "RPA0609101M025B")
+    (pinAssignRef "ECS_17231942")
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Aluminum Organic Polymer Capacitors 25V 100uF 0609 ESR=30mOhms")
+    (property "Manufacturer_Name" "Kyocera AVX")
+    (property "Manufacturer_Part_Number" "RPA0609101M025B")
+    (property "Mouser_Part_Number" "581-RPA0609101M025B")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/RPA0609101M025B?qs=Y0Uzf4wQF3lzEzQngFxXQA%3D%3D")
+    (property "Arrow_Part_Number" "")
+    (property "Arrow_Price/Stock" "")
+    (property "Datasheet_Link" "https://datasheets.kyocera-avx.com/rpa-series.pdf")
+    (property "compAreaTopHeight" 10.5)
+)
+
+

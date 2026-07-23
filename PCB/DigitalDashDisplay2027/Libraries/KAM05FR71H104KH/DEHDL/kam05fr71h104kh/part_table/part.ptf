@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'KAM05FR71H104KH'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kyocera AVX", "KAM05FR71H104KH" (!) = "", "CAPC1005X56N", "Capacitor Chip Non-polarised", "", "", "", "", "0.1 F +/-10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)", "https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf", "0.56 mm"
+END_PART
+
+END.

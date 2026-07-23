@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP B82442T1104K050
+D EPCOS SIMID Series Type 2220 Wire-wound SMD Inductor with a Ferrite Core, 100 uH Wire-Wound 510mA Idc Q:20
+K
+F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/data_sheet/30/db/ind_2008/b82442t.pdf
+$ENDCMP
+#
+#End Doc Library

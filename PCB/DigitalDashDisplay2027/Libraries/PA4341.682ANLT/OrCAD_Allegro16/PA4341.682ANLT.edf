@@ -1,0 +1,111 @@
+
+(EDIF
+  (rename &PA4341_682ANLT "PA4341_682ANLT")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2025 05 13 05 18 24)
+      (dataOrigin "1818421/1676590/2.50/2/3/Inductor")
+      (program "SamacSys ECAD Model PA4341_682ANLT"
+        (version "1.1"))))
+  (library
+  (rename &PA4341_682ANLT "PA4341_682ANLT")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &PA4341_682ANLT "PA4341_682ANLT")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "L")
+          (property (rename PACKAGENAME "PackageName") (string "PA4341_682ANLT"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "INDPM7166X300N"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Pulse Electronics"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "PA4341.682ANLT"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "673-PA4341.682ANLT"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4341.682ANLT?qs=chTDxNqvsylFNe219EfDtQ%3D%3D"))
+          (property (rename &Arrow_Part_Number "Arrow Part Number") (string "PA4341.682ANLT"))
+          (property (rename &Arrow_Price_Stock "Arrow Price/Stock") (string "https://www.arrow.com/en/products/pa4341.682anlt/pulse-electronics-corporation?region=nac"))
+          (property (rename &Description "Description") (string "Fixed Inductors 6.8uH 4.5A 3mm 20percent SMT"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://products.pulseelex.com/files/product_files/P820.pdf"))
+          (property (rename &Height "Height") (string "3 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "PA4341_682ANLT"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &1 "1")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &2 "2")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &1)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -100) (pt 0 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -100))))
+            )
+            (portImplementation
+              (name &2)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 400 -100) (pt 600 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt 600 -100))))
+            )
+            (figure GRAPHIC
+              (openShape
+                (curve
+                  (arc
+                    (pt 0 -100)
+                    (pt 50 -52)
+                    (pt 100 -100)))))
+            (figure GRAPHIC
+              (openShape
+                (curve
+                  (arc
+                    (pt 100 -100)
+                    (pt 150 -52)
+                    (pt 200 -100)))))
+            (figure GRAPHIC
+              (openShape
+                (curve
+                  (arc
+                    (pt 200 -100)
+                    (pt 250 -52)
+                    (pt 300 -100)))))
+            (figure GRAPHIC
+              (openShape
+                (curve
+                  (arc
+                    (pt 300 -100)
+                    (pt 350 -52)
+                    (pt 400 -100)))))
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 450 80))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 450 -20))))
+          )
+        )
+      )
+    )
+  )
+)

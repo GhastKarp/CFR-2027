@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RPA0609101M025B
+D Aluminum Organic Polymer Capacitors 25V 100uF 0609 ESR=30mOhms
+K
+F https://datasheets.kyocera-avx.com/rpa-series.pdf
+$ENDCMP
+#
+#End Doc Library

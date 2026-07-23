@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=LMR51430YDDCR
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (6-Pin)
+PinCount=6
+Version=1.1
+Released=2022-07-25 03:07:53
+Downloaded=2026-05-20 19:28:11
+3D=Y

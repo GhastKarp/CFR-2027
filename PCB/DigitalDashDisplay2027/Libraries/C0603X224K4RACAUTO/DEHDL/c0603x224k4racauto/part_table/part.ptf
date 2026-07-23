@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C0603X224K4RACAUTO'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KEMET", "C0603X224K4RACAUTO" (!) = "", "C0603", "Other", "80-C0603X224K4RAUTO", "https://www.mouser.co.uk/ProductDetail/KEMET/C0603X224K4RACAUTO?qs=i1BTgFBVgONZyNSwF3jKsg%3D%3D", "SMD Auto X7R Flex, Ceramic, 0.22 uF, 10%, 16 VDC, 40 VDC, 125C, -55C, X7R, SMD, MLCC, FT-CAP, Automotive Grade, 5 % , 2.2727 GOhms, 7.3 mg, 0603, 1.6mm, 0.8mm, 0.8mm, 0.58mm, 0.45mm, 4000, 78  Weeks, 80", "https://content.kemet.com/datasheets/KEM_C1078_X7R_FT-CAP_AUTO_SMD.pdf", "0.87 mm"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+Manufacturer=KEMET
+PartNumber=C0603X224K4RACAUTO
+PartCategory=Capacitor
+PackageCategory=Other
+PinCount=2
+Version=5.1
+Released=2022-02-18 05:41:00
+Downloaded=2025-10-24 20:10:11
+3D=Y

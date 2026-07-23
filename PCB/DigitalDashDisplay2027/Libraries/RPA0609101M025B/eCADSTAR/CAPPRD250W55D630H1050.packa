@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "RPA0609101M025B"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-03-29-09:18:29)
+    (mountForm default
+        (footprintRef "CAPPRD250W55D630H1050")
+        (spec "System")
+    )
+)

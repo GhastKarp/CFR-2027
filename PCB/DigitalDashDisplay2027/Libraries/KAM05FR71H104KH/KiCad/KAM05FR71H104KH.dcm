@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KAM05FR71H104KH
+D 0.1 F +/-10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)
+K
+F https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf
+$ENDCMP
+#
+#End Doc Library

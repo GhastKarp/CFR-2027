@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LMR51430YDDCR
+D Switching Voltage Regulators SIMPLE SWITCHER&reg; 4.5-V to 36-V, 3-A synchronous buck converter with 40-&micro;A IQ
+K
+F https://www.ti.com/lit/ds/symlink/lmr51430.pdf?ts=1657817980313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLMR51430%253FkeyMatch%253DLMR51430%2526tisearch%253Dsearch-everything%2526usecase%253DGPN
+$ENDCMP
+#
+#End Doc Library

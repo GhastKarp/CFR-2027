@@ -1,0 +1,116 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "PA4341.682ANLT"
+   (description "Fixed Inductors 6.8uH 4.5A 3mm 20% SMT")
+   (family "IND")
+   (package "INDPM7166X300N")
+   (attribute "Datasheet Link" "https://products.pulseelex.com/files/product_files/P820.pdf")
+   (attribute "Geometry.Height" "3mm")
+   (attribute "Manufacturer_Name" "Pulse Electronics")
+   (attribute "Manufacturer_Part_Number" "PA4341.682ANLT")
+   (attribute "Mouser Part Number" "673-PA4341.682ANLT")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4341.682ANLT?qs=chTDxNqvsylFNe219EfDtQ%3D%3D")
+   (attribute "Arrow Part Number" "PA4341.682ANLT")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/pa4341.682anlt/pulse-electronics-corporation?region=nac")
+   (gate
+    (symbol "PA4341.682ANLT")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "PA4341.682ANLT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 200 0) (pt 200 -52) (pt 300 48) (start -175.4) (sweep 177.7)) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 300 0) (pt 300 -52) (pt 400 48) (start -175.4) (sweep 177.7)) (pt 400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 400 0) (pt 400 -52) (pt 500 48) (start -175.4) (sweep 177.7)) (pt 500 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 500 0) (pt 500 -52) (pt 600 48) (start -175.4) (sweep 177.7)) (pt 600 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "INDPM7166X300N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -4.425 3.65)
+      (pt 4.425 3.65)
+      (pt 4.425 -3.65)
+      (pt -4.425 -3.65)
+      (pt -4.425 3.65))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.55 3.3)
+      (pt 3.55 3.3)
+      (pt 3.55 -3.3)
+      (pt -3.55 -3.3)
+      (pt -3.55 3.3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3.55 3.3)
+      (pt -3.55 3.3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.55 -3.3)
+      (pt 3.55 -3.3))))
+   (leg 1 (pt -2.85 0) (padstack 0))
+   (leg 2 (pt 2.85 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.65 3.1 0 0 90))
+   )
+   (model "PA4341.682ANLT.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

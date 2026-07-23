@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CL31B225KOHNNNE"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-06-28-13:57:33)
+    (mountForm default
+        (footprintRef "CAPC3216X180N")
+        (spec "System")
+    )
+)

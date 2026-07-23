@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1206W4J0103T5E
+D 10K +/-5% 1/4W 1206 Chip Resistor - Surface Mount RoHS
+K
+F https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4J0103T5E_C1489.pdf
+$ENDCMP
+#
+#End Doc Library

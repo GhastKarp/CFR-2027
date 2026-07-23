@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_559278"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-25-10:37:31)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "NLCV32T-101K-PF")
+)
+
+
+(pinAssign "ECS_559278"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-25-10:37:31)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_559278")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "NLCV32T-101K-PF")
+)
+
+
+(part "NLCV32T-101K-PF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-25-10:37:31)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "NLCV32T-101K-PF")
+    (pinAssignRef "ECS_559278")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "L")
+    (property "description" "TDK - NLCV32T-101K-PF - High Frequency Inductor, 100 H, NLCV Series, 120 mA, 1210 [3225 Metric], Wirewound, 3.7 ohm")
+    (property "Mouser_Part_Number" "810-NLCV32T-101K")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/NLCV32T-101K-PF?qs=stv2FWaTEl%252Bc4r1Vm288kQ%3D%3D")
+    (property "Manufacturer_Name" "TDK")
+    (property "Manufacturer_Part_Number" "NLCV32T-101K-PF")
+    (property "Datasheet_Link" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_nlcv32-pf_en.pdf")
+    (property "compAreaTopHeight" 2.4)
+)
+
+

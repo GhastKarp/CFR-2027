@@ -1,0 +1,18 @@
+.B82442T1104K050 :1 ;EPCOS SIMID Series Type 2220 Wire-wound SMD Inductor with a Ferrite Core, 100 uH Wire-Wound 510mA Idc Q:20
+INDPM5650X530N
+*STM L
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN B82442T1104K050
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (B82442T1104K050)
+~!Mouser Part Number (871-B82442T1104K050)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B82442T1104K050?qs=x3Z3TaiycduVzHqGgYB07A%3D%3D)
+~!Arrow Part Number (B82442T1104K050)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/b82442t1104k050/epcos-tdk)
+~!Link Datasheet (https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/data_sheet/30/db/ind_2008/b82442t.pdf)
+~!Height (5.3mm)
+~!3D_Model (B82442T1104K050)
+B82442T1104K050
+1.1!U 2.1!U 

@@ -1,0 +1,36 @@
+*PADS-LIBRARY-PCB-DECALS-V9*
+
+INDM3225X240N M 0 0 0 2 4 0 2 1 0
+TIMESTAMP 2025.10.24.21.10.23
+0 0 0 0 1.27 0.127 1 0 34 "Regular <Romansim Stroke Font>"
+REF-DES
+0 0 0 0 1.27 0.127 1 32 35 "Regular <Romansim Stroke Font>"
+PART-TYPE
+CLOSED 5 0.05 20 -1
+-2.45 1.6
+2.45 1.6
+2.45 -1.6
+-2.45 -1.6
+-2.45 1.6
+CLOSED 5 0.1 27 -1
+-1.6 1.25
+1.6 1.25
+1.6 -1.25
+-1.6 -1.25
+-1.6 1.25
+OPEN 2 0.2 26 -1
+1.6 1.25
+-1.6 1.25
+OPEN 2 0.2 26 -1
+-1.6 -1.25
+1.6 -1.25
+T-1.5 0 -1.5 0 1
+T1.5 0 1.5 0 2
+PAD 0 3 N 0
+-2 1.4 RF 0 90 1.95 0
+-1 0 R
+0 0 R
+
+*END*
+*REMARK* AP
+NLCV32T-101K-PF.stp/0/0/0/0/0/0

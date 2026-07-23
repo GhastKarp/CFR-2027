@@ -1,0 +1,9 @@
+Manufacturer=KOA Speer
+PartNumber=RK73H2ATTD1001F
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.1
+Released=2023-03-07 11:16:29
+Downloaded=2025-10-18 03:16:21
+3D=Y

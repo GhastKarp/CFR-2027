@@ -1,0 +1,18 @@
+.RK73H2ATTD1001F :1 ;Thick Film Resistors - SMD 1/8watts 1Kohms 1%
+RESC2012X60N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN RK73H2ATTD1001F
+~!Manufacturer_Name (KOA Speer)
+~!Manufacturer_Part_Number (RK73H2ATTD1001F)
+~!Mouser Part Number (660-RK73H2ATTD1001F)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/KOA-Speer/RK73H2ATTD1001F?qs=jqs4VlA0UkhWNsyvWbhZPg%3D%3D)
+~!Arrow Part Number (RK73H2ATTD1001F)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/rk73h2attd1001f/koa-speer-electronics?region=nac)
+~!Link Datasheet (http://www.koaspeer.com/catimages/Products/RK73H/RK73H.pdf)
+~!Height (0.6mm)
+~!3D_Model (RK73H2ATTD1001F)
+RK73H2ATTD1001F
+1.1!U 2.1!U 

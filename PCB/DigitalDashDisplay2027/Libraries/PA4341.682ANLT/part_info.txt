@@ -1,0 +1,9 @@
+Manufacturer=Pulse Electronics
+PartNumber=PA4341.682ANLT
+PartCategory=Inductor
+PackageCategory=Inductors Precision Moulded
+PinCount=2
+Version=1.1
+Released=2019-06-02 20:34:20
+Downloaded=2025-05-13 05:18:24
+3D=Y

@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_21051914"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-10-02-13:37:53)
+    (utime 2025-10-02-13:37:53)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "KAM05FR71H104KH")
+)
+
+
+(pinAssign "ECS_21051914"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-10-02-13:37:53)
+    (utime 2025-10-02-13:37:53)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_21051914")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "KAM05FR71H104KH")
+)
+
+
+(part "KAM05FR71H104KH"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2025-10-02-13:37:53)
+    (utime 2025-10-02-13:37:53)
+    (packageRef "KAM05FR71H104KH")
+    (pinAssignRef "ECS_21051914")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "0.1 F +/-10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)")
+    (property "Manufacturer_Name" "Kyocera AVX")
+    (property "Manufacturer_Part_Number" "KAM05FR71H104KH")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Arrow_Part_Number" "")
+    (property "Arrow_Price/Stock" "")
+    (property "Datasheet_Link" "https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf")
+    (property "compAreaTopHeight" 0.56)
+)
+
+

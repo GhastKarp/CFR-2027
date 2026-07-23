@@ -1,0 +1,9 @@
+Manufacturer=UNI-ROYAL(Uniroyal Elec)
+PartNumber=1206W4J0103T5E
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.1
+Released=2019-11-21 15:03:48
+Downloaded=2026-05-20 21:16:12
+3D=Y

@@ -1,0 +1,18 @@
+.RPA0609101M025B :1 ;Aluminum Organic Polymer Capacitors 25V 100uF 0609 ESR=30mOhms
+CAPPRD250W55D630H1050
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN RPA0609101M025B
+~!Manufacturer_Name (Kyocera AVX)
+~!Manufacturer_Part_Number (RPA0609101M025B)
+~!Mouser Part Number (581-RPA0609101M025B)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/RPA0609101M025B?qs=Y0Uzf4wQF3lzEzQngFxXQA%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheets.kyocera-avx.com/rpa-series.pdf)
+~!Height (10.5mm)
+~!3D_Model (RPA0609101M025B)
+RPA0609101M025B
+1.1!U 2.1!U 

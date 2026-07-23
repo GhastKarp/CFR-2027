@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CL32A226KOJNNNE'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "SAMSUNG", "CL32A226KOJNNNE" (!) = "", "CAPC3225X270N", "Capacitor Chip Non-polarised", "", "", "Samsung Electro-Mechanics 1210 CL 22uF Ceramic Multilayer Capacitor, 16 V, +85C, X5R Dielectric, +/-10% SMD", "https://ad.componentsearchengine.com/Datasheets/2/CL32A226KOJNNNE.pdf", "2.7 mm"
+END_PART
+
+END.
