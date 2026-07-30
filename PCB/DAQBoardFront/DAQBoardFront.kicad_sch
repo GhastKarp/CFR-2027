@@ -429,6 +429,232 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "CFR-Symbol-Library:53375-0810"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 9.906 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "CFR-Footprint-Library:CONN08_533750810_MOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "53375-0810_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "53375-0810"
+					(at 10.16 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "CFR-Symbol-Library:Adafruit-CAN-Pal"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2245,23 +2471,23 @@
 		(uuid "f9415d0a-e9fb-46a4-8ad4-243cbcddeb1f")
 	)
 	(no_connect
-		(at 40.64 53.34)
+		(at 40.64 139.7)
 		(uuid "6a137e09-4885-46f8-9d9c-0afc30e04e94")
 	)
 	(no_connect
-		(at 40.64 58.42)
+		(at 40.64 144.78)
 		(uuid "8d7143a9-7036-4019-b994-14d20b3566f5")
 	)
 	(no_connect
-		(at 40.64 66.04)
+		(at 40.64 152.4)
 		(uuid "bd4e8e03-cd4f-4888-b5e4-9e248335cb7e")
 	)
 	(no_connect
-		(at 40.64 55.88)
+		(at 40.64 142.24)
 		(uuid "d4ea58d9-0c7b-40a1-9dbc-4b666e74094c")
 	)
 	(no_connect
-		(at 40.64 139.7)
+		(at 40.64 59.69)
 		(uuid "f6dd57b6-84e0-4b9f-accf-dfa3a03446dc")
 	)
 	(wire
@@ -2336,7 +2562,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 137.16) (xy 52.07 137.16)
+			(xy 40.64 57.15) (xy 52.07 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2406,13 +2632,23 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 48.26) (xy 52.07 48.26)
+			(xy 40.64 134.62) (xy 52.07 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "453a5f27-0165-4420-8061-811cd462f97d")
+	)
+	(wire
+		(pts
+			(xy 43.18 121.92) (xy 59.69 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4596f3c8-0565-497e-a2d0-bf3865007e33")
 	)
 	(wire
 		(pts
@@ -2426,7 +2662,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 129.54) (xy 52.07 129.54)
+			(xy 43.18 109.22) (xy 59.69 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fe0ad9-4861-4aa4-9689-9522e1e7d5c2")
+	)
+	(wire
+		(pts
+			(xy 40.64 49.53) (xy 52.07 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2446,7 +2692,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 50.8) (xy 52.07 50.8)
+			(xy 43.18 104.14) (xy 59.69 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55e6c8cd-07ea-4856-8616-b9e1cd1b0968")
+	)
+	(wire
+		(pts
+			(xy 40.64 137.16) (xy 52.07 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2506,13 +2762,23 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 144.78) (xy 52.07 144.78)
+			(xy 40.64 64.77) (xy 52.07 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "76c7a14b-791e-4863-a9db-7ceec4eadd61")
+	)
+	(wire
+		(pts
+			(xy 196.85 87.63) (xy 224.79 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78d9d380-ea8e-4900-abe3-924ca30f4342")
 	)
 	(wire
 		(pts
@@ -2526,7 +2792,27 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 52.07 60.96)
+			(xy 43.18 111.76) (xy 59.69 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84915a06-ab9e-444c-b1fa-152444ef16e3")
+	)
+	(wire
+		(pts
+			(xy 43.18 116.84) (xy 59.69 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "868f46ce-e702-4252-a1f5-678c0ed840f8")
+	)
+	(wire
+		(pts
+			(xy 40.64 147.32) (xy 52.07 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2566,7 +2852,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 132.08) (xy 52.07 132.08)
+			(xy 40.64 52.07) (xy 52.07 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2616,6 +2902,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 114.3) (xy 59.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98de276a-6d8d-485a-ad55-d66a9465d558")
+	)
+	(wire
+		(pts
 			(xy 147.32 62.23) (xy 156.21 62.23)
 		)
 		(stroke
@@ -2623,16 +2919,6 @@
 			(type default)
 		)
 		(uuid "9a2db4d0-4a1b-4e3b-a08e-5ec24d964386")
-	)
-	(wire
-		(pts
-			(xy 196.85 87.63) (xy 200.66 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a192e914-1e2f-4b69-8d5c-140b61ec8734")
 	)
 	(wire
 		(pts
@@ -2756,7 +3042,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 142.24) (xy 52.07 142.24)
+			(xy 40.64 62.23) (xy 52.07 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +3102,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 134.62) (xy 52.07 134.62)
+			(xy 40.64 54.61) (xy 52.07 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2896,6 +3182,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 106.68) (xy 59.69 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6482956-30b2-48b6-b786-c906474b1b7e")
+	)
+	(wire
+		(pts
 			(xy 156.21 129.54) (xy 176.53 129.54)
 		)
 		(stroke
@@ -2916,7 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 63.5) (xy 52.07 63.5)
+			(xy 40.64 149.86) (xy 52.07 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2936,13 +3232,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 87.63) (xy 208.28 87.63)
+			(xy 43.18 119.38) (xy 59.69 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd432f26-6b42-48e2-bed1-9d4e7590b688")
+		(uuid "fe93156c-be66-40d9-aaf0-dfb8843a052f")
 	)
 	(wire
 		(pts
@@ -2985,7 +3281,7 @@
 		(uuid "0a3b0cb6-13da-4885-9090-2b4e4242b700")
 	)
 	(label "CAN Hi"
-		(at 52.07 142.24 180)
+		(at 52.07 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2995,7 +3291,7 @@
 		(uuid "127f6bf0-bbab-42f4-b4c9-9f193cf582c0")
 	)
 	(label "GND"
-		(at 52.07 50.8 180)
+		(at 52.07 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3015,7 +3311,7 @@
 		(uuid "20d3c9c1-db90-44f3-83e4-c9d14c09835e")
 	)
 	(label "+3.3V"
-		(at 52.07 48.26 180)
+		(at 52.07 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3023,6 +3319,16 @@
 			(justify right bottom)
 		)
 		(uuid "21051136-ce04-4e8c-b77c-be1b278673e6")
+	)
+	(label "Brake P Input"
+		(at 59.69 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2723e65d-0630-4948-9940-56e0e0ba935d")
 	)
 	(label "FRSus"
 		(at 224.79 129.54 180)
@@ -3045,7 +3351,7 @@
 		(uuid "3580515d-1a96-4962-bcac-4277f1910baa")
 	)
 	(label "Acc SDA"
-		(at 52.07 63.5 180)
+		(at 52.07 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3075,7 +3381,7 @@
 		(uuid "44f5fa30-5f91-4ce9-ad3d-6687ab78ebf9")
 	)
 	(label "GND"
-		(at 52.07 132.08 180)
+		(at 52.07 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3083,6 +3389,16 @@
 			(justify right bottom)
 		)
 		(uuid "48fba817-2424-40f0-a6c8-26759007583a")
+	)
+	(label "FLHallEffect"
+		(at 59.69 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "49b9299c-e6d7-4ee7-a115-27859f127f9d")
 	)
 	(label "Acc SCL"
 		(at 114.3 90.17 0)
@@ -3093,6 +3409,16 @@
 			(justify left bottom)
 		)
 		(uuid "56593652-dda4-4e10-b1ca-b502ec1031e9")
+	)
+	(label "FLSus"
+		(at 59.69 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ae5b298-1574-4aec-9a64-1eeecd85f8b5")
 	)
 	(label "+3.3V"
 		(at 191.77 44.45 0)
@@ -3105,7 +3431,7 @@
 		(uuid "5b269855-3a5b-4daf-ad6d-ed23715a15ba")
 	)
 	(label "+3.3V"
-		(at 52.07 129.54 180)
+		(at 52.07 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3124,6 +3450,16 @@
 		)
 		(uuid "6b72b10a-0bc8-4df3-84fe-0e548530b996")
 	)
+	(label "FRHallEffect"
+		(at 59.69 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "72cbd543-5a13-4294-bfc9-2f32dd77c24b")
+	)
 	(label "FLSus"
 		(at 224.79 115.57 180)
 		(effects
@@ -3133,6 +3469,16 @@
 			(justify right bottom)
 		)
 		(uuid "93b68cc7-8c5e-4fa7-bb1e-787d211185b2")
+	)
+	(label "ExtraAnalog"
+		(at 59.69 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "94f51c21-caae-46f4-8285-362fddda99e1")
 	)
 	(label "GND"
 		(at 176.53 140.97 180)
@@ -3145,6 +3491,36 @@
 		(uuid "95f176e3-9659-4698-9ab8-04bb37475522")
 	)
 	(label "SteeringAngle"
+		(at 59.69 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b64e4dbb-9d50-4c39-8d03-e76dc259ce99")
+	)
+	(label "FRSus"
+		(at 59.69 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b651cff6-e826-4d03-bf7a-30996a4d8a9b")
+	)
+	(label "ExtraDigital"
+		(at 59.69 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd6ffcce-62ad-4c91-b79c-421aa1bb3254")
+	)
+	(label "SteeringAngle"
 		(at 224.79 101.6 180)
 		(effects
 			(font
@@ -3155,7 +3531,7 @@
 		(uuid "bfd613b3-8a7c-46d1-8348-6a13e4eff312")
 	)
 	(label "CANTx"
-		(at 52.07 134.62 180)
+		(at 52.07 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3164,7 +3540,7 @@
 		)
 		(uuid "c14b0ed4-735b-442b-a625-4cf6a1443230")
 	)
-	(label "ExtraDigital3"
+	(label "ExtraDigital"
 		(at 162.56 77.47 180)
 		(effects
 			(font
@@ -3175,7 +3551,7 @@
 		(uuid "c3f922ef-3435-4fdc-a334-9a134f371a34")
 	)
 	(label "Acc SCL"
-		(at 52.07 60.96 180)
+		(at 52.07 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3184,7 +3560,7 @@
 		)
 		(uuid "c62210f6-df54-4af3-93ef-aebd96527c2d")
 	)
-	(label "Extra"
+	(label "ExtraAnalog"
 		(at 224.79 87.63 180)
 		(effects
 			(font
@@ -3224,7 +3600,7 @@
 		)
 		(uuid "d06e09b8-753f-439d-a0ab-bc17d03af31a")
 	)
-	(label "ExtraDigital2"
+	(label "FRHallEffect"
 		(at 162.56 74.93 180)
 		(effects
 			(font
@@ -3235,7 +3611,7 @@
 		(uuid "e3e1b7bb-a7aa-4cff-a451-71fe0c6822c5")
 	)
 	(label "CANRx"
-		(at 52.07 137.16 180)
+		(at 52.07 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3284,7 +3660,7 @@
 		)
 		(uuid "f8c0a139-701f-44eb-b0ab-37a45cf3407e")
 	)
-	(label "ExtraDigital1"
+	(label "FLHallEffect"
 		(at 162.56 72.39 180)
 		(effects
 			(font
@@ -3305,7 +3681,7 @@
 		(uuid "ff76e2b8-06a0-4a60-8cad-67e12fd415eb")
 	)
 	(label "CAN Lo"
-		(at 52.07 144.78 180)
+		(at 52.07 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3406,7 +3782,7 @@
 		(dnp no)
 		(uuid "08fb8e6e-877b-48ca-8c75-2f2b927ca2d1")
 		(property "Reference" "J2"
-			(at 26.67 86.3599 0)
+			(at 38.608 76.962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3417,7 +3793,7 @@
 			)
 		)
 		(property "Value" "53375-0410"
-			(at 26.67 88.8999 0)
+			(at 38.608 79.502 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3703,7 +4079,7 @@
 	)
 	(symbol
 		(lib_id "CFR-Symbol-Library:Adafruit-MMA8451")
-		(at 40.64 48.26 0)
+		(at 40.64 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3713,7 +4089,7 @@
 		(dnp no)
 		(uuid "2386460a-0a36-4c92-97e2-3a8b9584f7fe")
 		(property "Reference" "U1"
-			(at 35.306 42.418 0)
+			(at 35.306 128.778 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3723,7 +4099,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 40.64 48.26 0)
+			(at 40.64 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3733,7 +4109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 48.26 0)
+			(at 40.64 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3744,7 +4120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 48.26 0)
+			(at 40.64 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3755,7 +4131,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 48.26 0)
+			(at 40.64 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3829,7 +4205,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.04 117.348 90)
 			(hide yes)
 			(show_name no)
@@ -3878,85 +4254,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 204.47 87.63 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2ad94ca4-cf45-48f7-abde-7b657f2d287c")
-		(property "Reference" "L4"
-			(at 204.47 82.042 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L"
-			(at 204.47 84.582 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 204.47 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d28d02c2-88ba-4fbf-b5af-bbffda4e1550")
-		)
-		(pin "2"
-			(uuid "e91bf078-8147-44a0-8f7c-9bf9197b6541")
-		)
-		(instances
-			(project "DAQBoardFront"
-				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
-					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 176.53 134.62 0)
 		(unit 1)
@@ -3990,7 +4287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 177.4952 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -4211,7 +4508,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.04 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -4290,7 +4587,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.04 131.318 90)
 			(hide yes)
 			(show_name no)
@@ -4372,7 +4669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 177.4952 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4421,6 +4718,105 @@
 		)
 	)
 	(symbol
+		(lib_id "CFR-Symbol-Library:53375-0810")
+		(at 43.18 104.14 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "83a7c486-226e-48a5-9d5b-0e502683fbcb")
+		(property "Reference" "U4"
+			(at 34.544 98.298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 43.18 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CFR-Footprint-Library:CONN08_533750810_MOL"
+			(at 43.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "43132b29-162c-4aff-8e41-322157ac7667")
+		)
+		(pin "7"
+			(uuid "f0b7f439-fabb-479e-8015-73baf1e89cbe")
+		)
+		(pin "2"
+			(uuid "fa06907b-8962-4511-b916-0f30ca96bc01")
+		)
+		(pin "5"
+			(uuid "bfa6408b-8546-4918-8306-84fa06a316d6")
+		)
+		(pin "3"
+			(uuid "1df6737e-2233-40b5-88f5-8beaea8539d3")
+		)
+		(pin "4"
+			(uuid "7ec0107c-7457-42f1-8530-294f187cd8f2")
+		)
+		(pin "8"
+			(uuid "3baa5521-047d-4065-b5ea-b360f8ce0c50")
+		)
+		(pin "1"
+			(uuid "5436e748-d787-46da-9275-352bc6308f13")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 191.77 50.8 180)
 		(unit 1)
@@ -4451,7 +4847,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 193.548 50.8 90)
 			(hide yes)
 			(show_name no)
@@ -4533,7 +4929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 51.7652 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4615,7 +5011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 177.4952 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4887,7 +5283,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.04 89.408 90)
 			(hide yes)
 			(show_name no)
@@ -4969,7 +5365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 177.4952 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5019,7 +5415,7 @@
 	)
 	(symbol
 		(lib_id "CFR-Symbol-Library:Adafruit-CAN-Pal")
-		(at 40.64 129.54 0)
+		(at 40.64 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5030,7 +5426,7 @@
 		(fields_autoplaced yes)
 		(uuid "d516adf0-2d31-4298-b855-0de795cefadf")
 		(property "Reference" "U2"
-			(at 34.544 123.19 0)
+			(at 34.544 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5040,7 +5436,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 40.64 129.54 0)
+			(at 40.64 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5050,7 +5446,7 @@
 			)
 		)
 		(property "Footprint" "CFR-Footprint-Library:Adafruit CAN Pal"
-			(at 40.64 129.54 0)
+			(at 40.64 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5061,7 +5457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 129.54 0)
+			(at 40.64 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5072,7 +5468,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 129.54 0)
+			(at 40.64 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5143,7 +5539,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 213.868 64.77 90)
 			(hide yes)
 			(show_name no)
