@@ -14975,6 +14975,12 @@
 		(uuid "8ff65abb-0175-4553-a886-ef9d2ae46f62")
 	)
 	(junction
+		(at 25.4 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9059a338-9217-4542-ae3e-31e595a1a9c4")
+	)
+	(junction
 		(at 68.58 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14999,10 +15005,10 @@
 		(uuid "a25aa847-9fde-4bb5-851d-ca8994cc1810")
 	)
 	(junction
-		(at 33.02 80.01)
+		(at 25.4 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b44cc274-1ac1-42d6-84e1-b9dbeef80126")
+		(uuid "cded328b-2876-4a38-bff0-7ed2db31588a")
 	)
 	(junction
 		(at 151.13 153.67)
@@ -15027,6 +15033,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7f85aaa-1640-4f32-ab0e-f7728784c989")
+	)
+	(junction
+		(at 33.02 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eba86aa3-0ac3-44fd-902f-d0d01b93cf2a")
 	)
 	(junction
 		(at 90.17 96.52)
@@ -15156,6 +15168,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 74.93) (xy 33.02 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "134bc888-e9cb-4986-a6f2-467c29f4754c")
+	)
+	(wire
+		(pts
 			(xy 38.1 171.45) (xy 59.69 171.45)
 		)
 		(stroke
@@ -15236,7 +15258,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 74.93) (xy 33.02 74.93)
+			(xy 17.78 74.93) (xy 25.4 74.93)
 		)
 		(stroke
 			(width 0)
@@ -15343,6 +15365,16 @@
 			(type default)
 		)
 		(uuid "328b6b54-866c-4842-9d98-7c3f639bfa50")
+	)
+	(wire
+		(pts
+			(xy 33.02 82.55) (xy 33.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c4ec92-5312-433d-838d-344a605f3c2b")
 	)
 	(wire
 		(pts
@@ -15526,7 +15558,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 80.01) (xy 24.13 80.01)
+			(xy 25.4 88.9) (xy 17.78 88.9)
 		)
 		(stroke
 			(width 0)
@@ -15826,6 +15858,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 82.55) (xy 33.02 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88290b54-51e8-4095-9cc0-09ad829b45cf")
+	)
+	(wire
+		(pts
 			(xy 180.34 135.89) (xy 187.96 135.89)
 		)
 		(stroke
@@ -15956,16 +15998,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 85.09) (xy 33.02 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99f17d5b-7b41-46ba-aeea-0a0bb8fce1cf")
-	)
-	(wire
-		(pts
 			(xy 187.96 107.95) (xy 187.96 109.22)
 		)
 		(stroke
@@ -16073,6 +16105,16 @@
 			(type default)
 		)
 		(uuid "b3bb2663-b7cf-4ed4-9a97-37dd4389a849")
+	)
+	(wire
+		(pts
+			(xy 25.4 88.9) (xy 25.4 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b56a6866-319a-4be0-8b4d-b1ce546ca45c")
 	)
 	(wire
 		(pts
@@ -16413,6 +16455,16 @@
 			(type default)
 		)
 		(uuid "eaeed283-21ac-46ca-a239-fdecbb2d4378")
+	)
+	(wire
+		(pts
+			(xy 25.4 82.55) (xy 33.02 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb49b87f-53ec-4efb-b331-da4d9c924bb5")
 	)
 	(wire
 		(pts
@@ -16855,12 +16907,12 @@
 		(uuid "65b5112f-20ff-41b2-834e-21484b5a941e")
 	)
 	(label "GND"
-		(at 29.21 74.93 180)
+		(at 17.78 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6b07eceb-6a4c-4acd-8e4e-8c3c78d21876")
 	)
@@ -17155,7 +17207,7 @@
 		(uuid "efc393cc-c18e-45a1-9229-bb8ee9b83fca")
 	)
 	(label "+12V"
-		(at 24.13 80.01 0)
+		(at 17.78 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17185,12 +17237,12 @@
 		(uuid "f8c0a139-701f-44eb-b0ab-37a45cf3407e")
 	)
 	(label "GND"
-		(at 167.64 166.37 0)
+		(at 167.64 166.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fa01e552-d423-4816-b70a-fd6da935addf")
 	)
@@ -17972,7 +18024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 158.75 149.8599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17983,7 +18035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 154.432 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -18589,8 +18641,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 169.418 160.02 0)
+		(property "Value" "56.2k"
+			(at 170.942 164.338 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18600,7 +18652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 165.862 158.75 90)
 			(hide yes)
 			(show_name no)
@@ -19410,8 +19462,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 134.366 160.274 0)
+		(property "Value" "22.1k"
+			(at 137.16 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19421,7 +19473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 137.922 158.75 90)
 			(hide yes)
 			(show_name no)
@@ -19883,7 +19935,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 145.034 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19894,7 +19946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 149.352 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -20640,7 +20692,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 48.26 147.828 90)
 			(hide yes)
 			(show_name no)
@@ -20683,6 +20735,87 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "afddabe7-69e6-473f-8562-b4ba507db6cf")
+		(property "Reference" "C8"
+			(at 28.194 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C3216X5R1E476M160AC"
+			(at 8.128 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 26.3652 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 25.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "11600cbe-9510-4d7d-a75d-96d609d39a58")
+		)
+		(pin "1"
+			(uuid "f3a82b4e-2b6c-4286-aab5-3fdb4c5f6177")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "C8")
 					(unit 1)
 				)
 			)
