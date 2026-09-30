@@ -17355,7 +17355,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "08fb8e6e-877b-48ca-8c75-2f2b927ca2d1")
 		(property "Reference" "J2"
 			(at 33.528 139.192 0)
@@ -17834,7 +17834,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2386460a-0a36-4c92-97e2-3a8b9584f7fe")
 		(property "Reference" "U1"
 			(at 93.726 140.208 0)
@@ -20402,7 +20402,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9eff6400-d5b0-4a80-a9fa-3b9e98f8c822")
 		(property "Reference" "T1"
 			(at 114.3 38.1 90)
@@ -20830,7 +20830,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b5c32f80-707d-4091-aa52-6e1031368030")
 		(property "Reference" "U3"
 			(at 142.494 68.834 0)
@@ -21103,7 +21103,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c851cb16-667c-4bef-9969-b39f9c2b2623")
 		(property "Reference" "J1"
 			(at 33.274 160.02 0)

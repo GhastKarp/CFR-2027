@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -663,7 +663,7 @@
         "uuid": "fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
       }
     ],
-    "used_designators": "U2,R1-4,IC2-3,C1-8,#PWR6,#PWR16,#PWR20-21,L1-2",
+    "used_designators": "U2-5,R1-4,R10,R13-19,IC2-3,C1-8,T1-2,#PWR6,#PWR16,#PWR20-21,L1-2",
     "variants": []
   },
   "sheets": [
