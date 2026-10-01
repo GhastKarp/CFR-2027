@@ -5592,16 +5592,16 @@
 		(uuid "2cdc06a3-ad1f-4834-a8fe-03dbb8521e34")
 	)
 	(junction
-		(at 127 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31a1fbd9-73c8-4081-afd1-7a9752841e2d")
-	)
-	(junction
 		(at 30.48 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4037e7a0-0722-452c-a386-873b4a60442a")
+	)
+	(junction
+		(at 127 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50db7eb6-070f-4bf3-be8d-e10f2eadd954")
 	)
 	(junction
 		(at 33.02 120.65)
@@ -5900,16 +5900,6 @@
 			(type default)
 		)
 		(uuid "2988ca09-19a6-4b0b-b32c-0df251e4b691")
-	)
-	(wire
-		(pts
-			(xy 125.73 185.42) (xy 127 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31a02bad-80c1-4c8b-a33b-f80a27260dd3")
 	)
 	(wire
 		(pts
@@ -6750,6 +6740,16 @@
 			(type default)
 		)
 		(uuid "e527d352-f58a-4152-854f-6a4737ffaa4b")
+	)
+	(wire
+		(pts
+			(xy 119.38 185.42) (xy 118.11 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a5df28-1496-4819-9be6-005acdc04bcc")
 	)
 	(wire
 		(pts
@@ -18484,7 +18484,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 121.92 185.42 90)
+		(at 123.19 185.42 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18494,7 +18494,7 @@
 		(dnp no)
 		(uuid "0101b17c-0ff3-40d4-ad43-b40da3a52153")
 		(property "Reference" "R11"
-			(at 121.92 188.976 90)
+			(at 123.19 188.976 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18504,7 +18504,7 @@
 			)
 		)
 		(property "Value" "CSR1206FT50L0"
-			(at 120.142 175.768 0)
+			(at 121.412 175.768 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18514,7 +18514,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 121.92 187.198 90)
+			(at 123.19 187.198 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18525,7 +18525,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 185.42 0)
+			(at 123.19 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18536,7 +18536,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 121.92 185.42 0)
+			(at 123.19 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

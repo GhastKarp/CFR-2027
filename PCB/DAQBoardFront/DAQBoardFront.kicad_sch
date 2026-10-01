@@ -17673,7 +17673,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "174469a8-e091-4ff4-8848-64789b333f8f")
 		(property "Reference" "R13"
@@ -17720,7 +17720,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 60Ohm, 1%, 1/4W"
+		(property "Description" "RCS060359R0FKEA"
 			(at 90.17 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -19530,7 +19530,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "847896a0-e0dd-4f5e-b275-531672ac2afa")
 		(property "Reference" "R14"
@@ -19577,7 +19577,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, 60Ohm, 1%, 1/4W"
+		(property "Description" "RCS060359R0FKEA"
 			(at 90.17 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -20762,7 +20762,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C3216X5R1E476M160AC"
+		(property "Value" "C3216X5R1E476MTJ00E"
 			(at 8.128 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
