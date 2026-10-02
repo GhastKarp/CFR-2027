@@ -24,8 +24,6 @@ FLData = SkidPad3(: , 3) / 1024;
 RRData = SkidPad3(: , 4) / 1024;
 RLData = SkidPad3(: , 5) / 1024;
 
-SteerData = SkidPad3(: , 5);
-
 Data = [(time(2 : end) - time(2)) (FRData(2 : end))];
 
 % Fourier Transforms
@@ -34,14 +32,8 @@ FLFFT = abs(fftshift(fft(FLData)));
 RRFFT = abs(fftshift(fft(RRData)));
 RLFFT = abs(fftshift(fft(RLData)));
 
-% Normalize FFTs around 1
-FRFFT = FRFFT ./ max(FRFFT);
-FLFFT = FLFFT ./ max(FLFFT);
-RRFFT = RRFFT ./ max(RRFFT);
-RLFFT = RLFFT ./ max(RLFFT);
-
 nyFreq = samplingFreqAvg / 2;
-frequencies = linspace(-nyFreq, nyFreq, num); % Create array of frequency values
+frequencies = linspace(0, nyFreq, num); % Create array of frequency values
 
 
 out = sim("Anti_Aliasing_Filter.slx");
@@ -104,6 +96,8 @@ if plotMode == 0
     plot(frequencies, RLFFT, 'y')
     set(gca, 'YScale', 'log')
     hold off
+
+
 elseif plotMode == 1
 
     % Original data (time & frequency domains)
@@ -128,15 +122,10 @@ elseif plotMode == 1
     xlabel('time (s)')
     ylabel('voltage (V)')
 
-    % Get normalized FFT of incoming data from Simulink
     FilteredFFT = abs(fftshift(fft(out.FilteredData)));
-    FilteredFFT = FilteredFFT ./ max(FilteredFFT);
-
-    % Get updated frequency based on number of incoming samples
-    filteredFrequencyRange = linspace(-nyFreq, nyFreq, numel(FilteredFFT));
 
     subplot(2, 3, 5)
-    plot(filteredFrequencyRange, FilteredFFT, 'y')
+    plot(frequencies(2 : end), FilteredFFT(1 : numel(frequencies) - 1), 'y')
     set(gca, 'YScale', 'log') 
     title('Filtered FFT')
     xlabel('frequency (Hz)')
@@ -154,9 +143,9 @@ elseif plotMode == 1
 
     subplot(2, 3, 6)
     plot(frequencies, FRFFT, 'g')
-    %set(gca, 'YScale', 'log')
+    set(gca, 'YScale', 'log')
     hold on
-    plot(filteredFrequencyRange, FilteredFFT, 'y')
+    plot(frequencies(2 : end), FilteredFFT(1 : numel(frequencies) - 1), 'y')
     xlabel('frequency (Hz)')
     ylabel('power')
     hold off

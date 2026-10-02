@@ -19078,7 +19078,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C3216X5R1E476M160AC"
+		(property "Value" "C3216X5R1E476MTJ00E"
 			(at 131.572 180.086 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20266,7 +20266,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9b07d98b-eb2b-4c9e-b04a-77e08ef2f65d")
 		(property "Reference" "U4"

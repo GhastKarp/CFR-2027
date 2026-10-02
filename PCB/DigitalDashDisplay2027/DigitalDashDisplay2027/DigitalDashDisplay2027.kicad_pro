@@ -528,7 +528,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "outputs/",
       "pos_files": "./",
       "specctra_dsn": "",
       "step": "DigitalDashDisplay2025 - V4.step",
