@@ -562,6 +562,17 @@
 			(layer "F.SilkS")
 			(uuid "95713881-daf7-4262-9400-e8e1d9420620")
 		)
+		(fp_rect
+			(start -3 -2.5)
+			(end 18 51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "645651e7-8a97-4ff7-84b7-e34904926f66")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 7.64 6.7 0)
 			(unlocked yes)
@@ -2667,7 +2678,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Resistor, 60Ohm, 1%, 1/4W"
+		(property "Description" "RCS060359R0FKEA"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -2702,7 +2713,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.237258 -0.5225)
@@ -2807,7 +2818,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "C3216X5R1E476M160AC"
+		(property "Value" "C3216X5R1E476MTJ00E"
 			(at 0 -1.85 90)
 			(layer "B.Fab")
 			(uuid "eec43c61-7145-41be-b6c2-f39a59c13f34")
@@ -3424,7 +3435,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 0 -1.55 90)
 			(layer "B.Fab")
 			(uuid "a1c73fe1-b008-40ff-846d-d2e529f8164e")
@@ -3590,7 +3601,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1.69k"
+		(property "Value" "6.57k"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "59c9e09f-fc47-4870-9143-c2b07513033c")
@@ -4694,7 +4705,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Resistor, 60Ohm, 1%, 1/4W"
+		(property "Description" "RCS060359R0FKEA"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -4729,7 +4740,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.237258 -0.5225)
@@ -5326,7 +5337,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "26.4k"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "3134a468-706e-4c52-95f9-10e1a5caf5c5")
@@ -7049,7 +7060,7 @@
 			(uuid "c5ee307b-ee70-40ea-b0d5-40a2ce63e010")
 		)
 		(pad "2" smd rect
-			(at 1.15 0 180)
+			(at 1.15 0)
 			(size 0.42 0.82)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(D2-A)")
@@ -7395,7 +7406,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 0 -1.5 90)
 			(layer "B.Fab")
 			(uuid "59e547a5-67e5-4890-b60b-a2925b7fcd1a")
@@ -7824,7 +7835,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1.69k"
+		(property "Value" "6.57k"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "3ca10640-58b6-482d-88ab-abd4a528288b")
@@ -9618,7 +9629,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "22u"
 			(at 0 -1.55 90)
 			(layer "B.Fab")
 			(uuid "b1f9f910-42e3-421f-9133-8ca7b771f196")

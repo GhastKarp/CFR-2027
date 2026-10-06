@@ -17287,7 +17287,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 215.9 132.588 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17606,7 +17606,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "22u"
 			(at 215.9 118.872 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17767,7 +17767,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 215.9 146.812 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17943,7 +17943,7 @@
 				)
 			)
 		)
-		(property "Value" "1.69k"
+		(property "Value" "6.57k"
 			(at 204.47 132.588 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18328,7 +18328,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "26.4k"
 			(at 204.47 118.872 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19042,7 +19042,7 @@
 				)
 			)
 		)
-		(property "Value" "1.69k"
+		(property "Value" "6.57k"
 			(at 204.47 146.812 90)
 			(show_name no)
 			(do_not_autoplace no)

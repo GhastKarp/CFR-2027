@@ -19,13 +19,14 @@ num = numel(time); % Store number of elements in array data
 samplingFreqAvg = 1/0.005;
 
 % Select sus travel values from xlsx
-FRData = SkidPad3(: , 2) / 1024;
-FLData = SkidPad3(: , 3) / 1024;
-RRData = SkidPad3(: , 4) / 1024;
-RLData = SkidPad3(: , 5) / 1024;
+FRData = SkidPad3(: , 2) / 300 * 3.3; % 300 deg. per 3.3v
+FLData = SkidPad3(: , 3) / 300 * 3.3; % 300 deg. per 3.3v
+RRData = SkidPad3(: , 4) / 100 * 3.3; % 100 ** per 3.3v
+RLData = SkidPad3(: , 5) / 100 * 3.3; % 100 ** per 3.3v
 
-SteerData = SkidPad3(: , 5);
+SteerData = (SkidPad3(: , 5) + 180) / 360 * 3.3; % 360 deg. per 3.3v
 
+% Data to be sent through the low-pass filter
 Data = [(time(2 : end) - time(2)) (FRData(2 : end))];
 
 % Fourier Transforms
@@ -33,12 +34,14 @@ FRFFT = abs(fftshift(fft(FRData)));
 FLFFT = abs(fftshift(fft(FLData)));
 RRFFT = abs(fftshift(fft(RRData)));
 RLFFT = abs(fftshift(fft(RLData)));
+SteerFFT = abs(fftshift(fft(SteerData)));
 
 % Normalize FFTs around 1
 FRFFT = FRFFT ./ max(FRFFT);
 FLFFT = FLFFT ./ max(FLFFT);
 RRFFT = RRFFT ./ max(RRFFT);
 RLFFT = RLFFT ./ max(RLFFT);
+SteerFFT = SteerFFT ./ max(SteerFFT);
 
 nyFreq = samplingFreqAvg / 2;
 frequencies = linspace(-nyFreq, nyFreq, num); % Create array of frequency values
@@ -108,7 +111,7 @@ elseif plotMode == 1
 
     % Original data (time & frequency domains)
     subplot(2, 3, 1)
-    plot(time(2 : end), out.UnfilteredData(1 : numel(time) - 1), 'g')
+    plot(time(1 : end - 16), out.UnfilteredData(17 : numel(time)), 'g')
     title('Unfiltered Data')
     xlabel('time (s)')
     ylabel('voltage (V)')
@@ -123,7 +126,7 @@ elseif plotMode == 1
 
     % Filtered data (time & frequency domains)
     subplot(2, 3, 2)
-    plot(time(2 : end), out.FilteredData(1 : numel(time) - 1), 'y')
+    plot(time(1 : end - 16), out.FilteredData(17 : numel(time)), 'y')
     title('Filtered Data')
     xlabel('time (s)')
     ylabel('voltage (V)')
@@ -145,16 +148,16 @@ elseif plotMode == 1
 
     % Both compared directly
     subplot(2, 3, 3)
-    plot(time(2 : end), out.UnfilteredData(1 : numel(time) - 1), 'g')
+    plot(time(1 : end - 16), out.UnfilteredData(17 : numel(time)), 'g')
     hold on
-    plot(time(2 : end), out.FilteredData(1 : numel(time) - 1), 'y')
+    plot(time(1 : end - 16), out.FilteredData(17 : numel(time)), 'y')
     xlabel('time (s)')
     ylabel('voltage (V)')
     hold off
 
     subplot(2, 3, 6)
     plot(frequencies, FRFFT, 'g')
-    %set(gca, 'YScale', 'log')
+    set(gca, 'YScale', 'log')
     hold on
     plot(filteredFrequencyRange, FilteredFFT, 'y')
     xlabel('frequency (Hz)')
