@@ -7561,7 +7561,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at -0.05 -1.5 0)
+			(at -2.3 0.6 0)
 			(layer "B.SilkS")
 			(uuid "76bb8b93-5959-4984-8ee2-29ce4e16b918")
 			(effects
@@ -9942,6 +9942,50 @@
 		)
 	)
 	(gr_rect
+		(start 99.45 69.1)
+		(end 119.9 81.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "e042c6a1-85ea-40c1-bf52-c5ffef28909a")
+	)
+	(gr_rect
+		(start 105.45 81.4)
+		(end 125.9 101.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "aa709d9d-80ba-4303-85b9-0a435c6c1e78")
+	)
+	(gr_rect
+		(start 135.65 100.8)
+		(end 157.2 124.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "18147057-c184-410e-af26-83a6cca493f2")
+	)
+	(gr_rect
+		(start 136.35 75.35)
+		(end 157.5 97.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "3af72757-a153-4c39-921a-d5aeef406aa4")
+	)
+	(gr_rect
 		(start 98.5 67.9)
 		(end 158.45 128.05)
 		(stroke
@@ -10018,8 +10062,56 @@
 		(layer "F.CrtYd")
 		(uuid "931a10e2-adfd-42dd-825a-390fb4c76eba")
 	)
+	(gr_text "CAN Transceiver"
+		(at 119.85 70.6 0)
+		(layer "B.SilkS")
+		(uuid "a38f097f-39b9-44dd-b39c-ced1709a7585")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Current Sense"
+		(at 119.05 103.7 0)
+		(layer "B.SilkS")
+		(uuid "0cfb3667-d0b7-48f5-903e-c73a4294285d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "A-A Filters"
+		(at 144.2 125.85 0)
+		(layer "B.SilkS")
+		(uuid "0d5aa7ed-c7e1-4ca5-a4ff-1351a7e008a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Volt Step-Dn"
+		(at 147.2 77.15 0)
+		(layer "B.SilkS")
+		(uuid "b0c63947-1ff5-4956-9f66-c1ec90058e91")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "BUCK 12V->5V"
-		(at 124.2 103.2 0)
+		(at 127.6 82.05 90)
 		(layer "B.SilkS")
 		(uuid "f153871f-4ef4-476c-a0a3-b51c1a2b9ce9")
 		(effects
@@ -10729,6 +10821,15 @@
 		(uuid "1dc66410-1706-4518-909d-dbbc999aa3ff")
 	)
 	(via
+		(at 100.8 126.1)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "200e4aab-e531-4535-871e-241b09e24057")
+	)
+	(via
 		(at 145.89 117.6725)
 		(size 0.6)
 		(drill 0.3)
@@ -10744,6 +10845,15 @@
 		(free yes)
 		(net "/GND")
 		(uuid "2a812371-612a-4f6b-9074-0bda9d7b086c")
+	)
+	(via
+		(at 157.15 75.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "2e05a658-4c2a-44c4-8a4a-9da87985c055")
 	)
 	(via
 		(at 143.89 110.5225)
@@ -10781,6 +10891,15 @@
 		(uuid "7ad9272a-4b96-4b05-ae80-f3fd0dd31de6")
 	)
 	(via
+		(at 110.6 94.1)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "8920fcf4-a919-44b3-8f43-47d6948d1201")
+	)
+	(via
 		(at 109.6 83.6)
 		(size 0.6)
 		(drill 0.3)
@@ -10797,6 +10916,15 @@
 		(free yes)
 		(net "/GND")
 		(uuid "99237441-eb20-4cee-b9e1-6ac270aab2f5")
+	)
+	(via
+		(at 157.2 119.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "9d158029-900b-4f8a-8cef-1d13741b4487")
 	)
 	(via
 		(at 130.65 82.5)
@@ -10826,6 +10954,15 @@
 		(uuid "b0ff344a-f5a2-4d91-a15d-dfb68703bf40")
 	)
 	(via
+		(at 149.75 126.85)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "b65cb376-76ad-48cf-a501-0fa1092df671")
+	)
+	(via
 		(at 110.55 90.75)
 		(size 0.6)
 		(drill 0.3)
@@ -10853,6 +10990,15 @@
 		(uuid "d072b944-3ddd-4238-a005-737206f79723")
 	)
 	(via
+		(at 110.55 91.55)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "d1838691-385f-48e5-b403-aef294fa00b8")
+	)
+	(via
 		(at 130.65 76.65)
 		(size 0.6)
 		(drill 0.3)
@@ -10860,6 +11006,24 @@
 		(free yes)
 		(net "/GND")
 		(uuid "d663da4b-1109-4e3e-9401-dddff72b0cad")
+	)
+	(via
+		(at 149.3 69.2)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "d72e5442-5d3e-426b-b6bf-a51097d44ef2")
+	)
+	(via
+		(at 107.15 69.35)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "/GND")
+		(uuid "e57ee60b-b9df-466e-80fe-e0abccf9950a")
 	)
 	(via
 		(at 141.24 104.9725)
