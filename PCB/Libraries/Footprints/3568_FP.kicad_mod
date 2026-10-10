@@ -1,0 +1,232 @@
+(footprint "3568_FP"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "3568-1")
+	(tags "Undefined or Miscellaneous")
+	(property "Reference" "U**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "18d2e5cc-8339-4df3-9bf2-48e85c651633")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "3568_FP"
+		(at 0 -5.207 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2b86581c-bbf0-49de-bf92-60d5d8dc77db")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -4.96 1.827 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36520ce5-8615-4b53-bd64-9b2f4bef2546")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -4.96 1.827 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ab6310b-5ed5-44d7-ab09-187768a47dd3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -4.96 1.827 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5caf5521-254b-4efc-965c-0cf0a9d38c2b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -8 -3.238)
+		(end 8 -3.238)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8c1c5c1-381a-4aff-a293-de7e17f8d136")
+	)
+	(fp_line
+		(start -8 3.492)
+		(end -8 -3.238)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "edc1cc43-bccd-48c6-81d9-1f3eccb28f38")
+	)
+	(fp_line
+		(start 8 -3.238)
+		(end 8 3.492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "684285ec-968c-466f-a0b2-c059bf5799c1")
+	)
+	(fp_line
+		(start 8 3.492)
+		(end -8 3.492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "078d18cb-79de-442b-a6e4-133ff4b70169")
+	)
+	(fp_line
+		(start -9 -4.238)
+		(end 9 -4.238)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "945d7169-aa4f-4b73-bec1-a8bbc3335387")
+	)
+	(fp_line
+		(start -9 4.492)
+		(end -9 -4.238)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a3abf09f-7268-4620-bd4d-7d037e36e0fa")
+	)
+	(fp_line
+		(start 9 -4.238)
+		(end 9 4.492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "16048c98-ee99-462a-8397-14122e6b42f9")
+	)
+	(fp_line
+		(start 9 4.492)
+		(end -9 4.492)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "880726d8-d034-47e6-ba37-ffd9d33d84fb")
+	)
+	(fp_line
+		(start -8 -3.238)
+		(end 8 -3.238)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a13226c9-8ca3-4a06-972a-964a656b3472")
+	)
+	(fp_line
+		(start -8 3.492)
+		(end -8 -3.238)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "56c45aab-83d3-4f18-aebb-7c6001f883d4")
+	)
+	(fp_line
+		(start 8 -3.238)
+		(end 8 3.492)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4428434f-1d1c-4cc9-ba10-0d50a920ca9d")
+	)
+	(fp_line
+		(start 8 3.492)
+		(end -8 3.492)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a3611687-fe97-478a-9080-015804297a37")
+	)
+	(pad "1" thru_hole circle
+		(at -4.96 1.827)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e01cfc39-12bc-4dee-9eb5-6496a1956bc2")
+	)
+	(pad "2" thru_hole circle
+		(at -4.96 -1.573)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "97dec822-183c-4dff-b544-c28ca1e816dd")
+	)
+	(pad "3" thru_hole circle
+		(at 4.96 1.827)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "02d1a4f2-7f88-4924-94d9-7ace5ec8f4bf")
+	)
+	(pad "4" thru_hole circle
+		(at 4.96 -1.573)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "922a3ac7-797e-4eb7-b910-a1edf7dd00bf")
+	)
+	(model "C:/Users/Flora.Szklenar/Downloads/LIB_3568/3568/3D/3568.stp"
+		(offset
+			(xyz 0 -0.15 4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
