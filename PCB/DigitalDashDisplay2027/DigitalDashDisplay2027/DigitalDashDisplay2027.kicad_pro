@@ -528,7 +528,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "outputs/",
       "pos_files": "./",
       "specctra_dsn": "",
       "step": "DigitalDashDisplay2025 - V4.step",
@@ -663,7 +663,7 @@
         "uuid": "fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
       }
     ],
-    "used_designators": "U2,R1-4,IC2-3,C1-8,#PWR6,#PWR16,#PWR20-21,L1-2",
+    "used_designators": "U2-5,R1-4,R10,R13-19,IC2-3,C1-8,T1-2,#PWR6,#PWR16,#PWR20-21,L1-2",
     "variants": []
   },
   "sheets": [

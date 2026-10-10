@@ -60,7 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
+<<<<<<< HEAD
           "min_clearance": 0.0,
+=======
+          "min_clearance": 0.5,
+>>>>>>> 1cd7a4168a3d03ff67f9b60950523c42da114d42
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -758,7 +762,11 @@
       {
         "filename": "Power Distribution 2027.kicad_sch",
         "name": "Power Distribution 2027",
+<<<<<<< HEAD
         "uuid": "00000000-0000-0000-0000-000000000000"
+=======
+        "uuid": "f6f58ada-b836-46b6-892c-bac6fe254a4c"
+>>>>>>> 1cd7a4168a3d03ff67f9b60950523c42da114d42
       }
     ],
     "used_designators": "",
@@ -767,7 +775,7 @@
   "sheets": [
     [
       "f6f58ada-b836-46b6-892c-bac6fe254a4c",
-      "Root"
+      "Power Distribution 2027"
     ]
   ],
   "text_variables": {},
