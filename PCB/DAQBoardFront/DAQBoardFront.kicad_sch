@@ -14735,8 +14735,8 @@
 		(uuid "2e5fb99c-cc6f-4d6a-b8a0-47343551b190")
 	)
 	(rectangle
-		(start 177.8 16.51)
-		(end 227.33 50.8)
+		(start 177.8 25.4)
+		(end 227.33 59.69)
 		(stroke
 			(width 0)
 			(type solid)
@@ -14795,8 +14795,8 @@
 		(uuid "ad9bfd44-6875-4387-949e-2790ffac8fd7")
 	)
 	(rectangle
-		(start 177.8 55.88)
-		(end 257.81 95.25)
+		(start 177.8 67.31)
+		(end 234.95 93.98)
 		(stroke
 			(width 0)
 			(type solid)
@@ -14805,6 +14805,18 @@
 			(type none)
 		)
 		(uuid "d4d2e694-79a3-4d3e-8502-334d7d3b5f7b")
+	)
+	(rectangle
+		(start 229.87 25.4)
+		(end 274.32 59.69)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d76699d2-1852-4f1b-b842-73df1a12237b")
 	)
 	(text "A-A Analog Filters"
 		(exclude_from_sim no)
@@ -14816,9 +14828,9 @@
 		)
 		(uuid "2077314c-49aa-45c4-8792-5baa80f7df74")
 	)
-	(text "Hall Effect Sensor Detection Circuit"
+	(text "Hall Effect Sensor Pull-Up Circuits"
 		(exclude_from_sim no)
-		(at 201.422 54.102 0)
+		(at 205.74 65.532 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14828,7 +14840,7 @@
 	)
 	(text "Brake Detection Circuit"
 		(exclude_from_sim no)
-		(at 200.914 14.986 0)
+		(at 200.914 23.876 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14876,6 +14888,16 @@
 		)
 		(uuid "9a2235fa-840c-4ad4-9d9c-71c3eb175293")
 	)
+	(text "3.3v-15V Detection Circuit"
+		(exclude_from_sim no)
+		(at 251.968 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ac0774a0-8ea2-4144-b0dd-14d97c118257")
+	)
 	(text "CAN Transceiver"
 		(exclude_from_sim no)
 		(at 71.628 21.336 0)
@@ -14903,28 +14925,16 @@
 		(uuid "0d9e2371-6992-49d2-b403-001cfacdd90b")
 	)
 	(junction
-		(at 226.06 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0edff1be-38d9-4c3c-9302-a9e57306ce8f")
-	)
-	(junction
-		(at 210.82 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15f02ca8-dce5-40df-b9fa-3ad7217eac0f")
-	)
-	(junction
-		(at 191.77 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "177c7241-761a-41e9-abc8-baa5985a530e")
-	)
-	(junction
 		(at 187.96 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a5971f6-3f64-4bf8-b15c-195ff85e8064")
+	)
+	(junction
+		(at 259.08 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b443161-e193-42df-bae0-4d8b842b527c")
 	)
 	(junction
 		(at 90.17 27.94)
@@ -14937,6 +14947,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fa63807-9023-4730-8263-eb89279c8782")
+	)
+	(junction
+		(at 219.71 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "340a5369-18f8-48dc-9354-2f66a4bc24c0")
+	)
+	(junction
+		(at 238.76 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c92b567-49b2-41f4-a7f6-4658982ae840")
 	)
 	(junction
 		(at 187.96 107.95)
@@ -14957,7 +14979,7 @@
 		(uuid "79a69c12-d6a7-4c71-9227-cf119a709398")
 	)
 	(junction
-		(at 207.01 34.29)
+		(at 207.01 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "859ec43f-498b-4aa8-9599-aecbdded4d03")
@@ -15005,6 +15027,12 @@
 		(uuid "a25aa847-9fde-4bb5-851d-ca8994cc1810")
 	)
 	(junction
+		(at 191.77 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6e54c2a-2428-4b14-bf3c-63f4b4b58599")
+	)
+	(junction
 		(at 25.4 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -15017,16 +15045,10 @@
 		(uuid "d36bfc3d-e634-4658-ba66-f3e78456b9da")
 	)
 	(junction
-		(at 186.69 34.29)
+		(at 186.69 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfb0bdec-5025-4b0a-a12d-1f3b67a4ce25")
-	)
-	(junction
-		(at 246.38 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e623df61-550b-4ed8-a82c-7c4f7ef97404")
 	)
 	(junction
 		(at 40.64 146.05)
@@ -15068,7 +15090,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 34.29) (xy 186.69 30.48)
+			(xy 186.69 43.18) (xy 186.69 39.37)
 		)
 		(stroke
 			(width 0)
@@ -15188,13 +15210,33 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 76.2) (xy 228.6 76.2)
+			(xy 191.77 88.9) (xy 201.93 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b43e820-40b3-4f20-b495-42d47eef8094")
+		(uuid "14e10635-b1ba-419a-a378-7d33b446699a")
+	)
+	(wire
+		(pts
+			(xy 259.08 29.21) (xy 259.08 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ad5dd6-6f90-454d-b438-2ca952684a82")
+	)
+	(wire
+		(pts
+			(xy 229.87 91.44) (xy 219.71 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18b87256-0509-4f89-9e8e-4acbbce45f66")
 	)
 	(wire
 		(pts
@@ -15228,16 +15270,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 90.17) (xy 191.77 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1eed64a1-6f03-4874-ad36-82476d0013c6")
-	)
-	(wire
-		(pts
 			(xy 111.76 27.94) (xy 119.38 27.94)
 		)
 		(stroke
@@ -15245,16 +15277,6 @@
 			(type default)
 		)
 		(uuid "204874ae-8c7d-4099-88d0-792b65a3d1bb")
-	)
-	(wire
-		(pts
-			(xy 191.77 76.2) (xy 193.04 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2327e122-f5c9-44b1-b90d-805821246ae8")
 	)
 	(wire
 		(pts
@@ -15305,6 +15327,16 @@
 			(type default)
 		)
 		(uuid "274155d0-d1f8-45b3-9135-e909fb65b1e7")
+	)
+	(wire
+		(pts
+			(xy 259.08 45.72) (xy 259.08 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2797c88f-aecf-487f-b8cb-652ccc55e08f")
 	)
 	(wire
 		(pts
@@ -15448,6 +15480,36 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 96.52) (xy 238.76 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39e8ca36-1ae9-470e-bff5-ec8b331f5d20")
+	)
+	(wire
+		(pts
+			(xy 219.71 73.66) (xy 219.71 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a079231-175b-47e1-9fca-e352cae4f11b")
+	)
+	(wire
+		(pts
+			(xy 175.26 95.25) (xy 175.26 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c485688-4bbf-4916-a973-14af69a1c0f1")
+	)
+	(wire
+		(pts
 			(xy 175.26 87.63) (xy 153.67 87.63)
 		)
 		(stroke
@@ -15468,6 +15530,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 92.71) (xy 153.67 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "417c1da8-48f6-4392-913c-e98721a64319")
+	)
+	(wire
+		(pts
 			(xy 27.94 48.26) (xy 36.83 48.26)
 		)
 		(stroke
@@ -15478,13 +15550,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 78.74) (xy 246.38 76.2)
+			(xy 238.76 43.18) (xy 241.3 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "466317c5-a00b-4bf1-8790-bc9bae650211")
+		(uuid "45900306-47fc-40c8-b3ab-e6836262ca25")
 	)
 	(wire
 		(pts
@@ -15505,16 +15577,6 @@
 			(type default)
 		)
 		(uuid "4b54e156-d99e-448d-8c9f-ee7505da24ea")
-	)
-	(wire
-		(pts
-			(xy 190.5 62.23) (xy 190.5 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c4eb347-f3dd-41cd-8c4d-9de95caabf6a")
 	)
 	(wire
 		(pts
@@ -15588,16 +15650,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 62.23) (xy 226.06 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d58d61b-e48e-4b7f-92ee-80f6222bf73a")
-	)
-	(wire
-		(pts
 			(xy 38.1 186.69) (xy 59.69 186.69)
 		)
 		(stroke
@@ -15608,7 +15660,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 34.29) (xy 204.47 34.29)
+			(xy 207.01 43.18) (xy 204.47 43.18)
 		)
 		(stroke
 			(width 0)
@@ -15638,26 +15690,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 92.71) (xy 226.06 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6529619d-fa81-4294-9490-838bc41bf299")
-	)
-	(wire
-		(pts
-			(xy 246.38 62.23) (xy 246.38 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6739ede2-7df0-4ced-a800-6bdd8e264b0c")
-	)
-	(wire
-		(pts
 			(xy 40.64 135.89) (xy 40.64 146.05)
 		)
 		(stroke
@@ -15668,7 +15700,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 95.25) (xy 166.37 95.25)
+			(xy 153.67 95.25) (xy 175.26 95.25)
 		)
 		(stroke
 			(width 0)
@@ -15698,6 +15730,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 96.52) (xy 238.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ca684bc-3fb1-4250-9ec5-fd5daa83a4b8")
+	)
+	(wire
+		(pts
 			(xy 139.7 154.94) (xy 139.7 153.67)
 		)
 		(stroke
@@ -15715,6 +15757,16 @@
 			(type default)
 		)
 		(uuid "6e30c1d2-1221-4a6c-b000-6535472a3858")
+	)
+	(wire
+		(pts
+			(xy 191.77 90.17) (xy 191.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733daf22-c6b1-48aa-bb43-dbc142c5ee25")
 	)
 	(wire
 		(pts
@@ -15828,6 +15880,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 43.18) (xy 238.76 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83671576-c3ef-4645-ba18-c2c69d78bcb4")
+	)
+	(wire
+		(pts
 			(xy 208.28 135.89) (xy 212.09 135.89)
 		)
 		(stroke
@@ -15845,16 +15907,6 @@
 			(type default)
 		)
 		(uuid "847effbf-a538-4d34-babe-35d5be090c1e")
-	)
-	(wire
-		(pts
-			(xy 226.06 76.2) (xy 226.06 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "850a6b3a-a01f-40da-b2be-166af7e5acc9")
 	)
 	(wire
 		(pts
@@ -15928,16 +15980,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 92.71) (xy 226.06 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fba644d-9e36-4f43-b3ae-97a25568ff64")
-	)
-	(wire
-		(pts
 			(xy 85.09 27.94) (xy 90.17 27.94)
 		)
 		(stroke
@@ -15978,7 +16020,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 34.29) (xy 186.69 34.29)
+			(xy 175.26 43.18) (xy 186.69 43.18)
 		)
 		(stroke
 			(width 0)
@@ -16005,16 +16047,6 @@
 			(type default)
 		)
 		(uuid "a3216d67-12b6-4087-b6c5-11b214b95821")
-	)
-	(wire
-		(pts
-			(xy 191.77 76.2) (xy 190.5 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3cec8a4-a38b-4b04-b125-77e3593f785e")
 	)
 	(wire
 		(pts
@@ -16078,6 +16110,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 92.71) (xy 219.71 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6b2990-d35e-4764-92f4-2bba03fba584")
+	)
+	(wire
+		(pts
 			(xy 52.07 146.05) (xy 59.69 146.05)
 		)
 		(stroke
@@ -16098,7 +16140,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 36.83) (xy 207.01 34.29)
+			(xy 207.01 45.72) (xy 207.01 43.18)
 		)
 		(stroke
 			(width 0)
@@ -16115,6 +16157,16 @@
 			(type default)
 		)
 		(uuid "b56a6866-319a-4be0-8b4d-b1ce546ca45c")
+	)
+	(wire
+		(pts
+			(xy 259.08 53.34) (xy 259.08 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b66535a6-3e06-4977-a50c-4146e7390f6d")
 	)
 	(wire
 		(pts
@@ -16168,7 +16220,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 20.32) (xy 207.01 34.29)
+			(xy 207.01 29.21) (xy 207.01 43.18)
 		)
 		(stroke
 			(width 0)
@@ -16228,26 +16280,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 86.36) (xy 210.82 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7c0afaf-8a60-4cbf-b05f-2c20ffc08583")
-	)
-	(wire
-		(pts
-			(xy 190.5 76.2) (xy 190.5 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c81e7d3a-51f0-4673-a4a4-3c1114c1d42c")
-	)
-	(wire
-		(pts
 			(xy 187.96 147.32) (xy 187.96 144.78)
 		)
 		(stroke
@@ -16298,7 +16330,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 44.45) (xy 207.01 48.26)
+			(xy 207.01 53.34) (xy 207.01 57.15)
 		)
 		(stroke
 			(width 0)
@@ -16318,13 +16350,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 86.36) (xy 246.38 90.17)
+			(xy 191.77 73.66) (xy 191.77 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d16c6b39-ce32-4adb-98a0-40d0d4fd356d")
+		(uuid "d0ea0cc0-201b-4def-8ae5-43134125d96f")
 	)
 	(wire
 		(pts
@@ -16348,7 +16380,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 34.29) (xy 189.23 34.29)
+			(xy 186.69 43.18) (xy 189.23 43.18)
 		)
 		(stroke
 			(width 0)
@@ -16358,13 +16390,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 62.23) (xy 210.82 76.2)
+			(xy 219.71 86.36) (xy 219.71 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de94aadb-55dc-4ff0-bfad-f8c595810941")
+		(uuid "da5a7d52-c413-417c-aa91-361dd00d3912")
+	)
+	(wire
+		(pts
+			(xy 191.77 86.36) (xy 191.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de3e68c3-d751-4eda-8a43-04aa175c9a8a")
 	)
 	(wire
 		(pts
@@ -16428,16 +16470,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 76.2) (xy 208.28 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8d1c957-2565-4cdf-b650-1db84a82f8f8")
-	)
-	(wire
-		(pts
 			(xy 208.28 121.92) (xy 212.09 121.92)
 		)
 		(stroke
@@ -16445,16 +16477,6 @@
 			(type default)
 		)
 		(uuid "e9972bd7-4326-48c7-9ecf-64fa8e9735e3")
-	)
-	(wire
-		(pts
-			(xy 210.82 78.74) (xy 210.82 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaeed283-21ac-46ca-a239-fdecbb2d4378")
 	)
 	(wire
 		(pts
@@ -16485,16 +16507,6 @@
 			(type default)
 		)
 		(uuid "ed8f3bc8-8eca-4160-9610-84851bf6e340")
-	)
-	(wire
-		(pts
-			(xy 246.38 76.2) (xy 243.84 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efd886b6-2386-4513-af71-c057bec74647")
 	)
 	(wire
 		(pts
@@ -16578,7 +16590,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 34.29) (xy 175.26 87.63)
+			(xy 175.26 43.18) (xy 175.26 87.63)
 		)
 		(stroke
 			(width 0)
@@ -16588,13 +16600,33 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 20.32) (xy 186.69 22.86)
+			(xy 186.69 29.21) (xy 186.69 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f98eccff-405a-40d6-b953-f0b513ece840")
+	)
+	(wire
+		(pts
+			(xy 238.76 29.21) (xy 238.76 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe50648-0aa3-430d-822f-d1f62961691f")
+	)
+	(wire
+		(pts
+			(xy 259.08 43.18) (xy 256.54 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdaec91-e3bf-4654-b401-d3e56bd670aa")
 	)
 	(wire
 		(pts
@@ -16635,16 +16667,6 @@
 			(justify left bottom)
 		)
 		(uuid "030c8771-43d7-4468-bb85-c7f84028bfcb")
-	)
-	(label "ExtraDigital"
-		(at 166.37 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "082ec4fc-b4ee-429e-8d8f-63f3189e2b31")
 	)
 	(label "GND"
 		(at 59.69 148.59 180)
@@ -16767,7 +16789,7 @@
 		(uuid "3580515d-1a96-4962-bcac-4277f1910baa")
 	)
 	(label "+3.3V"
-		(at 190.5 62.23 0)
+		(at 191.77 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16787,7 +16809,7 @@
 		(uuid "41f8d995-63ba-46b3-9eb2-466f3722e3de")
 	)
 	(label "GND"
-		(at 207.01 48.26 0)
+		(at 207.01 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16836,6 +16858,16 @@
 		)
 		(uuid "49b9299c-e6d7-4ee7-a115-27859f127f9d")
 	)
+	(label "ExtraDigital"
+		(at 259.08 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b3948e2-bcd4-4641-b1f7-84f3030489bb")
+	)
 	(label "Acc SCL"
 		(at 120.65 107.95 0)
 		(effects
@@ -16867,7 +16899,7 @@
 		(uuid "5ae5b298-1574-4aec-9a64-1eeecd85f8b5")
 	)
 	(label "+3.3V"
-		(at 186.69 20.32 0)
+		(at 186.69 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16947,12 +16979,12 @@
 		(uuid "7f399a8f-e6fb-4516-a820-bc366f2b547b")
 	)
 	(label "FLHallEffect"
-		(at 210.82 62.23 180)
+		(at 201.93 88.9 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "85b3ac84-a057-4e8b-9d18-365591c162e5")
 	)
@@ -16967,12 +16999,12 @@
 		(uuid "85b887b6-bacb-48a3-9c87-11368d7db643")
 	)
 	(label "FRHallEffect"
-		(at 246.38 62.23 180)
+		(at 229.87 91.44 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "8b6709f0-f272-42ac-b7c7-038d2470df19")
 	)
@@ -17005,16 +17037,6 @@
 			(justify right bottom)
 		)
 		(uuid "94f51c21-caae-46f4-8285-362fddda99e1")
-	)
-	(label "GND"
-		(at 210.82 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "958a28eb-74d0-4bd5-a4fd-ee82fd0d34a3")
 	)
 	(label "GND"
 		(at 187.96 161.29 180)
@@ -17076,6 +17098,16 @@
 		)
 		(uuid "bfd613b3-8a7c-46d1-8348-6a13e4eff312")
 	)
+	(label "+3.3V"
+		(at 238.76 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0366b5c-6f90-4928-a920-f28d5e03bd1d")
+	)
 	(label "CANTx"
 		(at 27.94 50.8 0)
 		(effects
@@ -17117,7 +17149,7 @@
 		(uuid "c75a0295-3327-4ad4-8fc9-bfc05bfb6e64")
 	)
 	(label "Brake P Input (12V)"
-		(at 207.01 20.32 0)
+		(at 207.01 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17125,6 +17157,16 @@
 			(justify left bottom)
 		)
 		(uuid "c77f3d21-54a0-4cb0-99ca-463ace8fd77a")
+	)
+	(label "GND"
+		(at 259.08 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca6bcefd-e60e-4395-a081-6a53b9692e0d")
 	)
 	(label "+12V"
 		(at 59.69 146.05 180)
@@ -17167,7 +17209,7 @@
 		(uuid "e6dfe41f-d434-4e39-9d84-176a8d7ad9b3")
 	)
 	(label "+3.3V"
-		(at 226.06 62.23 0)
+		(at 219.71 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17185,16 +17227,6 @@
 			(justify right bottom)
 		)
 		(uuid "ee381cb4-ccdf-40a7-8c26-861dc1bf92a3")
-	)
-	(label "GND"
-		(at 246.38 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee9a978f-d022-4d3e-b6a4-8102e1171e25")
 	)
 	(label "GND"
 		(at 95.25 38.1 180)
@@ -17496,96 +17528,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 226.06 68.58 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0c9e8d72-2186-4d14-a006-ef0c02ebb799")
-		(property "Reference" "R9"
-			(at 220.472 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "24k"
-			(at 223.012 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 227.838 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 226.06 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "1/4W"
-			(at 226.06 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "75ba4146-57d4-4c20-9c7b-e5b54a826f7e")
-		)
-		(pin "1"
-			(uuid "d0ae31fc-c1f4-4886-8e43-f6a1e15edc80")
-		)
-		(instances
-			(project "DAQBoardFront"
-				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 215.9 121.92 90)
 		(unit 1)
@@ -17659,6 +17601,148 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CFR-Symbol-Library:1N4148WS")
+		(at 256.54 43.18 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1278aeef-8cd7-464d-9f78-1e56182cc760")
+		(property "Reference" "D3"
+			(at 248.92 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 248.92 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SODFL2512X90N"
+			(at 245.11 140.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/1N4148WS-D.PDF"
+			(at 245.11 240.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "ON Semiconductor Switching Diode, 300mA 75V, 2-Pin SOD-323 1N4148WS"
+			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9"
+			(at 245.11 440.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "512-1N4148WS"
+			(at 245.11 540.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/1N4148WS?qs=2%2FYqgE%252BHg%252BKBrKZlAsMLhw%3D%3D"
+			(at 245.11 640.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 245.11 740.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1N4148WS"
+			(at 245.11 840.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "e42ede43-b441-468c-bdf6-bb888ed8dfcd")
+		)
+		(pin "2"
+			(uuid "163db489-5394-4dcd-8cde-f07e719ab07a")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -17741,6 +17825,96 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 238.76 35.56 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ecd695f-68de-430e-8646-3dc49b548963")
+		(property "Reference" "R7"
+			(at 233.172 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24k"
+			(at 235.712 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 240.538 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 238.76 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1/4W"
+			(at 238.76 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f8b3f9df-7637-4c5a-a787-d87ca49d00fe")
+		)
+		(pin "1"
+			(uuid "09662145-78f3-41f8-bcca-c9a85db84851")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -18167,7 +18341,7 @@
 	)
 	(symbol
 		(lib_id "CFR-Symbol-Library:1N4148WS")
-		(at 204.47 34.29 0)
+		(at 204.47 43.18 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -18178,7 +18352,7 @@
 		(dnp no)
 		(uuid "39fc18f2-a9c0-4fdb-a3a3-bf80ff73b9fb")
 		(property "Reference" "D2"
-			(at 196.85 26.67 0)
+			(at 196.85 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18188,7 +18362,7 @@
 			)
 		)
 		(property "Value" "1N4148WS"
-			(at 196.85 29.21 0)
+			(at 196.85 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18198,7 +18372,7 @@
 			)
 		)
 		(property "Footprint" "SODFL2512X90N"
-			(at 193.04 131.75 0)
+			(at 193.04 140.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18210,7 +18384,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/1N4148WS-D.PDF"
-			(at 193.04 231.75 0)
+			(at 193.04 240.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18222,7 +18396,7 @@
 			)
 		)
 		(property "Description" "ON Semiconductor Switching Diode, 300mA 75V, 2-Pin SOD-323 1N4148WS"
-			(at 204.47 34.29 0)
+			(at 204.47 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18233,7 +18407,7 @@
 			)
 		)
 		(property "Height" "0.9"
-			(at 193.04 431.75 0)
+			(at 193.04 440.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18245,7 +18419,7 @@
 			)
 		)
 		(property "Mouser Part Number" "512-1N4148WS"
-			(at 193.04 531.75 0)
+			(at 193.04 540.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18257,7 +18431,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/1N4148WS?qs=2%2FYqgE%252BHg%252BKBrKZlAsMLhw%3D%3D"
-			(at 193.04 631.75 0)
+			(at 193.04 640.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18269,7 +18443,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "onsemi"
-			(at 193.04 731.75 0)
+			(at 193.04 740.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18281,7 +18455,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "1N4148WS"
-			(at 193.04 831.75 0)
+			(at 193.04 840.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18524,96 +18698,6 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 190.5 68.58 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4f024831-9679-4a23-b8c3-a25efd81bb4b")
-		(property "Reference" "R7"
-			(at 184.912 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "24k"
-			(at 187.452 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 192.278 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 190.5 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "1/4W"
-			(at 190.5 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d8597afa-dc01-41f8-9467-b6b8f6e7ac96")
-		)
-		(pin "1"
-			(uuid "66de9c00-1d95-4b1b-b35e-699b8f6523ff")
-		)
-		(instances
-			(project "DAQBoardFront"
-				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -19102,7 +19186,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 210.82 82.55 180)
+		(at 191.77 82.55 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19112,7 +19196,7 @@
 		(dnp no)
 		(uuid "75b6587e-300b-4955-8edd-7f5c500ccbb9")
 		(property "Reference" "R8"
-			(at 205.232 82.55 90)
+			(at 186.182 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19121,8 +19205,8 @@
 				)
 			)
 		)
-		(property "Value" "2k"
-			(at 207.772 82.55 90)
+		(property "Value" "1k"
+			(at 188.722 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19132,7 +19216,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 212.598 82.55 90)
+			(at 193.548 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19143,7 +19227,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 82.55 0)
+			(at 191.77 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19154,7 +19238,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 210.82 82.55 0)
+			(at 191.77 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19165,7 +19249,7 @@
 			)
 		)
 		(property "Rating" "1/4W"
-			(at 210.82 82.55 90)
+			(at 191.77 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19605,7 +19689,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 186.69 26.67 180)
+		(at 259.08 49.53 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19613,9 +19697,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "854a2354-552c-4665-980a-6db25572095d")
-		(property "Reference" "R4"
-			(at 181.102 26.67 90)
+		(uuid "85206416-3d0a-407e-90f0-4b9ef4472cc1")
+		(property "Reference" "R9"
+			(at 253.492 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19624,8 +19708,8 @@
 				)
 			)
 		)
-		(property "Value" "24k"
-			(at 183.642 26.67 90)
+		(property "Value" "2k"
+			(at 256.032 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19634,8 +19718,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 188.468 26.67 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 260.858 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19646,7 +19730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 26.67 0)
+			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19657,7 +19741,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 186.69 26.67 0)
+			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19668,7 +19752,97 @@
 			)
 		)
 		(property "Rating" "1/4W"
-			(at 186.69 26.67 90)
+			(at 259.08 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a0cb5616-8969-4a95-a769-b820c633248a")
+		)
+		(pin "1"
+			(uuid "a86f3804-1edd-4aa7-bbae-bc1c1652c22d")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 186.69 35.56 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "854a2354-552c-4665-980a-6db25572095d")
+		(property "Reference" "R4"
+			(at 181.102 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24k"
+			(at 183.642 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 188.468 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 186.69 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1/4W"
+			(at 186.69 35.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19995,148 +20169,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CFR-Symbol-Library:1N4148WS")
-		(at 243.84 76.2 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "86facb8a-68e5-438f-b068-acc548bfb566")
-		(property "Reference" "D4"
-			(at 236.22 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4148WS"
-			(at 236.22 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SODFL2512X90N"
-			(at 232.41 173.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/1N4148WS-D.PDF"
-			(at 232.41 273.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "ON Semiconductor Switching Diode, 300mA 75V, 2-Pin SOD-323 1N4148WS"
-			(at 243.84 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "0.9"
-			(at 232.41 473.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "512-1N4148WS"
-			(at 232.41 573.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/1N4148WS?qs=2%2FYqgE%252BHg%252BKBrKZlAsMLhw%3D%3D"
-			(at 232.41 673.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 232.41 773.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1N4148WS"
-			(at 232.41 873.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "0b660c36-d17d-4068-bb02-cdd3b1abc540")
-		)
-		(pin "2"
-			(uuid "6d5d5f32-acea-46f6-8535-14f9d139db94")
-		)
-		(instances
-			(project "DAQBoardFront"
-				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CFR Library:PA4341.682ANLT")
 		(at 33.02 96.52 0)
 		(unit 1)
@@ -20304,7 +20336,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 246.38 82.55 180)
+		(at 219.71 82.55 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20314,7 +20346,7 @@
 		(dnp no)
 		(uuid "92a49743-7167-4971-a1b9-c2396daf351b")
 		(property "Reference" "R10"
-			(at 240.792 82.55 90)
+			(at 214.122 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20323,8 +20355,8 @@
 				)
 			)
 		)
-		(property "Value" "2k"
-			(at 243.332 82.55 90)
+		(property "Value" "1k"
+			(at 216.662 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20334,7 +20366,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 248.158 82.55 90)
+			(at 221.488 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20345,7 +20377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 82.55 0)
+			(at 219.71 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20356,7 +20388,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 246.38 82.55 0)
+			(at 219.71 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20367,7 +20399,7 @@
 			)
 		)
 		(property "Rating" "1/4W"
-			(at 246.38 82.55 90)
+			(at 219.71 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21221,7 +21253,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1u"
 			(at 191.77 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21282,7 +21314,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 207.01 40.64 180)
+		(at 207.01 49.53 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21292,7 +21324,7 @@
 		(dnp no)
 		(uuid "ecf9238a-7e86-4921-bbcb-34382091c932")
 		(property "Reference" "R5"
-			(at 201.422 40.64 90)
+			(at 201.422 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21302,7 +21334,7 @@
 			)
 		)
 		(property "Value" "2k"
-			(at 203.962 40.64 90)
+			(at 203.962 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21312,7 +21344,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 208.788 40.64 90)
+			(at 208.788 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21323,7 +21355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 40.64 0)
+			(at 207.01 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21334,7 +21366,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 207.01 40.64 0)
+			(at 207.01 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21345,7 +21377,7 @@
 			)
 		)
 		(property "Rating" "1/4W"
-			(at 207.01 40.64 90)
+			(at 207.01 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21365,148 +21397,6 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CFR-Symbol-Library:1N4148WS")
-		(at 208.28 76.2 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ef4b5cd4-3b54-4b8a-b747-702a4002b6a6")
-		(property "Reference" "D3"
-			(at 200.66 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4148WS"
-			(at 200.66 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SODFL2512X90N"
-			(at 196.85 173.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/1N4148WS-D.PDF"
-			(at 196.85 273.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "ON Semiconductor Switching Diode, 300mA 75V, 2-Pin SOD-323 1N4148WS"
-			(at 208.28 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "0.9"
-			(at 196.85 473.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "512-1N4148WS"
-			(at 196.85 573.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/1N4148WS?qs=2%2FYqgE%252BHg%252BKBrKZlAsMLhw%3D%3D"
-			(at 196.85 673.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 196.85 773.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1N4148WS"
-			(at 196.85 873.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "2ac48a69-b5ac-422e-be6b-8d0e2f83270a")
-		)
-		(pin "2"
-			(uuid "424d423d-023b-4f39-a06a-59b2179d4644")
-		)
-		(instances
-			(project "DAQBoardFront"
-				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
-					(reference "D3")
 					(unit 1)
 				)
 			)
