@@ -5602,6 +5602,18 @@
 		(uuid "2cdc06a3-ad1f-4834-a8fe-03dbb8521e34")
 	)
 	(junction
+		(at 186.69 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e12c83e-b095-43f4-a4fd-6d6bc70c340a")
+	)
+	(junction
+		(at 186.69 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f65928b-b3e1-4bc0-a5b2-e31ac655a69c")
+	)
+	(junction
 		(at 30.48 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5813,13 +5825,23 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 41.91) (xy 179.07 41.91)
+			(xy 194.31 41.91) (xy 186.69 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "19a51ce2-a593-48ac-b572-a17b61bbfe65")
+	)
+	(wire
+		(pts
+			(xy 179.07 41.91) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19bc9da4-5a96-4e55-a59c-a7742f890b04")
 	)
 	(wire
 		(pts
@@ -6143,6 +6165,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 64.77) (xy 194.31 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a7df8f8-d53e-4d5f-ae5d-d92565a75d68")
+	)
+	(wire
+		(pts
 			(xy 195.58 115.57) (xy 213.36 115.57)
 		)
 		(stroke
@@ -6183,7 +6215,17 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 64.77) (xy 194.31 64.77)
+			(xy 186.69 59.69) (xy 186.69 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ed17f3-e884-4014-9778-1366ab65eddf")
+	)
+	(wire
+		(pts
+			(xy 180.34 64.77) (xy 186.69 64.77)
 		)
 		(stroke
 			(width 0)
@@ -20375,7 +20417,7 @@
 		(uuid "017143c0-33a3-4f9c-a470-75453cf291c9")
 	)
 	(label "GND"
-		(at 184.15 64.77 0)
+		(at 180.34 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22978,6 +23020,173 @@
 			(project "DigitalDashDisplay2027"
 				(path "/fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1206W4J0103T5E:1206W4J0103T5E")
+		(at 186.69 41.91 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c7c3653-58d3-4f38-a3ef-ab16247eb366")
+		(property "Reference" "R12"
+			(at 189.738 55.118 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 191.77 55.118 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 90.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" ""
+			(at -9.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "10 kOhms ±5% 0.1W, 1/10W"
+			(at 186.69 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at -209.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at -309.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603JR-0710KL"
+			(at -409.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at -509.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at -609.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at -709.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at -809.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "bff4e54c-b4da-43e8-b5dd-495dbb2ac6e1")
+		)
+		(pin "2"
+			(uuid "30e40eab-09d0-408e-a8d2-81a873fca72a")
+		)
+		(instances
+			(project "DigitalDashDisplay2027"
+				(path "/fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
+					(reference "R12")
 					(unit 1)
 				)
 			)

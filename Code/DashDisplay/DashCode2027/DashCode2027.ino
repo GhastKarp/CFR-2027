@@ -1,6 +1,7 @@
 
 /*
-*  Digital dash display code designed take a Serial input from an ESP32 and display to a digital driver-interface TFT screen. 
+*  Digital dash display code designed to take a Serial input from an ESP32 and display to a digital driver-interface TFT screen.
+*  Running on a Teensy 4.0 u-controller.
 */
 
 // Define TFT display             CS  DC  RST 
@@ -31,6 +32,9 @@ void setup(){
   tft.begin();
   tft.setRotation(1); // landscape mode
   tft.fillScreen(Black);
+
+  // Set up TFT screen borders
+  
 }
 
 void loop(){

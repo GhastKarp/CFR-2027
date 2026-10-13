@@ -18,8 +18,8 @@ void loop() {
   if(lastHallState == true && hallState == false){
     uint32_t currentTime = millis();
 
-    float rpm = 1.0 / ((float)(currentTime - lastHallStateFlipTime) / 1000 / 60.0);
-    Serial.println(rpm);
+    float rpm = 1.0 / ((float)(currentTime - lastHallStateFlipTime) / 1000.0 / 60.0);
+    Serial.println((int)rpm);
     lastHallStateFlipTime = currentTime;
   }
   
