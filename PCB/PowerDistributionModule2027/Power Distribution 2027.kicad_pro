@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 1.15,
+          "width": 0.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -525,7 +525,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -659,13 +659,18 @@
       {
         "filename": "Power Distribution 2027.kicad_sch",
         "name": "Power Distribution 2027",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "f6f58ada-b836-46b6-892c-bac6fe254a4c"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "f6f58ada-b836-46b6-892c-bac6fe254a4c",
+      "Power Distribution 2027"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
