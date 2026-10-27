@@ -531,7 +531,7 @@
       "plot": "outputs/",
       "pos_files": "./",
       "specctra_dsn": "",
-      "step": "DigitalDashDisplay2025 - V4.step",
+      "step": "../../../../../../Downloads/DigitalDashDisplay2027.step",
       "svg": "",
       "vrml": ""
     },

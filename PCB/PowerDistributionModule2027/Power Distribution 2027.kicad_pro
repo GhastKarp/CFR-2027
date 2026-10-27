@@ -527,7 +527,7 @@
       "netlist": "",
       "plot": "Gerbers/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../../Downloads/PowerDistribution2027.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

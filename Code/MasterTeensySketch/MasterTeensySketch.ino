@@ -17,11 +17,12 @@ const int PIN_FRONT_LEFT  = A2;
 const int PIN_REAR_RIGHT  = A1;
 const int PIN_REAR_LEFT   = A0;
 const int PIN_STEERING    = A6;
+const int PIN_FL_HALL     = 4;
 const int PIN_DD5         = A10;
 const int PIN_DD6         = A11;
 const int PIN_DD7         = A12;
 const int PIN_DD8         = A13;
-const int BUTTON_PIN      = A7;
+const int BUTTON_PIN      = 18;
 const int RECORDING_LED_PIN = LED_BUILTIN;
 const unsigned long SAMPLE_PERIOD_US = 5000;
 const int CHIP_SELECT = BUILTIN_SDCARD;
@@ -51,6 +52,10 @@ float latestAzG = 0.0;
 uint16_t latestAccelSequence = 0;
 unsigned long latestAccelReceivedUs = 0;
 bool hasAccelData = false;
+
+bool lastHallState = false;
+uint32_t lastHallStateFlipTime = 0;
+float rpmFL = 0;
 
 const int BUFFER_SIZE = 512;
 char dataBuffer[BUFFER_SIZE];
@@ -469,7 +474,7 @@ void startRecording() {
   }
 
   dataBufferPosition = 0;
-  dataFile.println("Time_us,Front_Right_Angle_Deg,Front_Left_Angle_Deg,Rear_Right_Travel,Rear_Left_Travel,Steering_Angle_Deg,TPS_Percent,Coolant_Temp_F,RPM,DD8_Volts,ax_g,ay_g,az_g,Accel_Seq,Accel_Age_us");
+  dataFile.println("Time_us,Front_Right_Angle_Deg,Front_Left_Angle_Deg,Rear_Right_Travel,Rear_Left_Travel,Steering_Angle_Deg,Wheel_Speed_RPM,TPS_Percent,Coolant_Temp_F,RPM,DD8_Volts,ax_g,ay_g,az_g,Accel_Seq,Accel_Age_us");
   dataFile.flush();
   isRecording = true;
   pendingRecordingStart = false;
@@ -575,15 +580,26 @@ void loop() {
   int rawDD7 = analogRead(PIN_DD7);
   int rawDD8 = analogRead(PIN_DD8);
 
+  bool hallState = digitalRead(PIN_FL_HALL);
+  uint32_t currentTime = millis();
+
+  if(lastHallState == true && hallState == false){
+    rpmFL = 1.0 / ((float)(currentTime - lastHallStateFlipTime) / 1000.0 / 60.0);
+    lastHallStateFlipTime = currentTime;
+  }
+  if(abs(lastHallStateFlipTime - currentTime) > 1000) rpmFL = 0;
+
+  lastHallState = hallState;
+
   float frontRightAngleDeg = mapToRange(rawFrontRight, 0, 1023, 0.0, 300.0);
   float frontLeftAngleDeg  = mapToRange(rawFrontLeft, 0, 1023, 0.0, 300.0);
   float rearRightTravel    = mapToRange(rawRearRight, 0, 1023, 0.0, 100.0);
   float rearLeftTravel     = mapToRange(rawRearLeft, 0, 1023, 0.0, 100.0);
   float steeringAngleDeg   = mapToRange(rawSteering, 0, 1023, -180.0, 180.0);
 
-  float tpsPercent = mapToRange(rawDD5, 0, 1027, 0.0, 100.0);
-  float coolantTempF = mapToRange(rawDD6, 0, 1027, 30.0, 300.0);
-  float rpmValue = mapToRange(rawDD7, 0, 1027, 0.0, 13500.0);
+  float tpsPercent = mapToRange(rawDD5, 0, 1023, 0.0, 100.0);
+  float coolantTempF = mapToRange(rawDD6, 0, 1023, 30.0, 300.0);
+  float rpmValue = mapToRange(rawDD7, 0, 1023, 0.0, 13500.0);
   float dd8Volts = rawDD8 * ADC_REF_VOLTAGE / ADC_MAX_COUNT;
 
   float axG = latestAxG;
@@ -594,13 +610,14 @@ void loop() {
   int len = snprintf(
     dataBuffer + dataBufferPosition,
     BUFFER_SIZE - dataBufferPosition,
-    "%lu,%.4f,%.4f,%.4f,%.4f,%.4f,%.2f,%.2f,%.0f,%.4f,%.5f,%.5f,%.5f,%u,%lu\n",
+    "%lu,%.4f,%.4f,%.4f,%.4f,%.4f,%.2f,%.2f,%.2f,%.0f,%.4f,%.5f,%.5f,%.5f,%u,%lu\n",
     nowUs,
     frontRightAngleDeg,
     frontLeftAngleDeg,
     rearRightTravel,
     rearLeftTravel,
     steeringAngleDeg,
+    rpmFL,
     tpsPercent,
     coolantTempF,
     rpmValue,
@@ -621,13 +638,14 @@ void loop() {
     len = snprintf(
       dataBuffer + dataBufferPosition,
       BUFFER_SIZE - dataBufferPosition,
-      "%lu,%.4f,%.4f,%.4f,%.4f,%.4f,%.2f,%.2f,%.0f,%.4f,%.5f,%.5f,%.5f,%u,%lu\n",
+      "%lu,%.4f,%.4f,%.4f,%.4f,%.4f,%.2f,%.2f,%.2f,%.0f,%.4f,%.5f,%.5f,%.5f,%u,%lu\n",
       nowUs,
       frontRightAngleDeg,
       frontLeftAngleDeg,
       rearRightTravel,
       rearLeftTravel,
       steeringAngleDeg,
+      rpmFL,
       tpsPercent,
       coolantTempF,
       rpmValue,
