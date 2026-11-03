@@ -55,7 +55,7 @@ const uint16_t Green = RGB565(0, 255, 0);
 #define RPM_Meter_CDiameter   16
 
 #define RPM_Text_XOffset      20
-#define RPM_Text_YOffset      45
+#define RPM_Text_YOffset      60
 
 #define Gear_Text_Size        15
 #define Gear_XOffset         204
@@ -92,6 +92,12 @@ void setup(){
 
   // Battery Charge
   drawBatteryVolts(0.0);
+
+  // ECT Meter
+  drawECT(0.0);
+
+  // DAQ Status Light
+  toggleDAQStatus();
 }
 
 // Display drawing functions
@@ -127,9 +133,9 @@ void drawRPMMeter(uint16_t rpm){
   for(int i = 0; i < 5; i++){
     if(rpmArray[i] != 0) leadingZeros = false;
 
-    if(leadingZeros == false && prevRPMArray[i] != rpmArray[i]){
-      tft.fillRect(RPM_Text_XOffset, RPM_Text_YOffset, 10, 20, Black);
-      writeTextToScreen(rpmArray[i], RPM_Text_XOffset, RPM_Text_YOffset, 4, White);
+    if(prevRPMArray[i] != rpmArray[i]){
+      tft.fillRect(RPM_Text_XOffset + i*30, RPM_Text_YOffset, 20, 40, Black);
+      if(leadingZeros == false || i == 4) writeTextToScreen(rpmArray[i], RPM_Text_XOffset + i*30, RPM_Text_YOffset, 4, White);
     }
 
     prevRPMArray[i] = rpmArray[i];
@@ -154,9 +160,9 @@ void drawGear(uint8_t gear){
   prevStrGear = strGear;
 }
 
+uint8_t prevVoltsArray[3] = {1,1,1};
+uint16_t prevVoltColor = Green;
 void drawBatteryVolts(float batteryVolts){
-  // Clear area
-  tft.fillRect(25, 220, 110, 100, Black);
 
   // Calculate individual digits
   uint8_t voltsArray[3];
@@ -165,9 +171,22 @@ void drawBatteryVolts(float batteryVolts){
   voltsArray[2] = ((uint8_t)(batteryVolts * 10.0 + 0.001)) % 10;// Minor offset applied to round up on rounded FP numbers when casting int
 
   // Write numbers to screen
-  if(batteryVolts >= 10.0) writeTextToScreen(voltsArray[0], 25, 220, 4, White);
-  writeTextToScreen(voltsArray[1], 47, 220, 4, White);
-  writeTextToScreen(voltsArray[2], 82, 220, 4, White);
+  if(prevVoltsArray[0] != voltsArray[0]){
+    tft.fillRect(25, 220, 20, 40, Black);
+    if(batteryVolts >= 10.0) writeTextToScreen(voltsArray[0], 25, 220, 4, White);
+  }
+  if(prevVoltsArray[1] != voltsArray[1]){
+    tft.fillRect(47, 220, 20, 40, Black);
+    writeTextToScreen(voltsArray[1], 47, 220, 4, White);
+  }
+  if(prevVoltsArray[2] != voltsArray[2]){
+    tft.fillRect(82, 220, 20, 40, Black);
+    writeTextToScreen(voltsArray[2], 82, 220, 4, White);
+  }
+
+  prevVoltsArray[0] = voltsArray[0];
+  prevVoltsArray[1] = voltsArray[1];
+  prevVoltsArray[2] = voltsArray[2];
 
   // Write decimal pt and V
   writeTextToScreen(".", 62, 220, 4, White);
@@ -179,12 +198,92 @@ void drawBatteryVolts(float batteryVolts){
   if(batteryVolts < 11.5) voltColor = Red;
 
   // Draw battery symbol
-  tft.fillRect(44, 270, 60, 36, voltColor); //box
-  tft.fillRect(79, 263, 18, 7, voltColor);  //lead
-  tft.fillRect(51, 263, 18, 7, voltColor);  //lead
-  tft.fillRect(58, 279, 4, 18, Black);      //plus
-  tft.fillRect(51, 286, 18, 4, Black);      //plus
-  tft.fillRect(79, 286, 18, 4, Black);      //minus
+  if(prevVoltColor != voltColor){
+    tft.fillRect(44, 263, 60, 45, Black);     //cover-up
+
+    tft.fillRect(44, 270, 60, 36, voltColor); //box
+    tft.fillRect(79, 263, 18, 7, voltColor);  //lead
+    tft.fillRect(51, 263, 18, 7, voltColor);  //lead
+    tft.fillRect(58, 279, 4, 18, Black);      //plus
+    tft.fillRect(51, 286, 18, 4, Black);      //plus
+    tft.fillRect(79, 286, 18, 4, Black);      //minus
+  }
+
+  prevVoltColor = voltColor;
+}
+
+uint16_t prevECTArray[3] = {1,1,1};
+uint8_t prevThermometerStage = 1;
+void drawECT(float ect){
+
+  // Calculate individual digits
+  uint16_t ectArray[3];
+  ectArray[0] = (uint16_t)(ect) / 100;
+  ectArray[1] = (uint16_t)(ect) % 100 / 10;
+  ectArray[2] = (uint16_t)(ect) % 10;
+
+  // Write numbers to screen
+  if(prevECTArray[0] != ectArray[0]){
+    tft.fillRect(380, 220, 20, 40, Black);
+    if(ect >= 100.0) writeTextToScreen(ectArray[0], 380, 220, 4, White);
+  }
+  if(prevECTArray[1] != ectArray[1]){
+    tft.fillRect(402, 220, 20, 40, Black);
+    if(ect >= 10.0) writeTextToScreen(ectArray[1], 402, 220, 4, White);
+  }
+  if(prevECTArray[2] != ectArray[2]){
+    tft.fillRect(425, 220, 20, 40, Black);
+    writeTextToScreen(ectArray[2], 425, 220, 4, White);
+  }
+
+  // Refresh previous array
+  prevECTArray[0] = ectArray[0];
+  prevECTArray[1] = ectArray[1];
+  prevECTArray[2] = ectArray[2];
+
+
+  // Thermometer logic
+  uint8_t thermometerStage = 0;
+  if(ect > 70.0) thermometerStage = 1;
+  if(ect > 140.0) thermometerStage = 2;
+  if(ect > 210.0) thermometerStage = 3;
+  if(ect > 280.0) thermometerStage = 4;
+  if(ect > 350.0) thermometerStage = 5;
+
+  if(prevThermometerStage != thermometerStage){
+    // Draw thermometer
+    tft.fillCircle(380, 285, 16, White);
+    tft.fillRect(383, 275, 60, 21, White);
+    tft.fillCircle(443, 285, 10, White);
+
+    // Fill in thermometer
+    tft.fillCircle(380, 285, 10, Green);
+    if(thermometerStage >= 1) tft.fillRect(383, 279, 15, 13, Green);
+    if(thermometerStage >= 2) tft.fillRect(398, 279, 15, 13, Yellow);
+    if(thermometerStage >= 3) tft.fillRect(413, 279, 15, 13, Yellow);
+    if(thermometerStage >= 4) tft.fillRect(428, 279, 15, 13, Red);
+    if(thermometerStage >= 5) tft.fillCircle(443, 285, 6, Red);
+  }
+
+  prevThermometerStage = thermometerStage;
+}
+
+bool DAQStatus = true;
+void toggleDAQStatus(){
+  DAQStatus = !DAQStatus;
+
+  // Write text to screen
+  writeTextToScreen("DAQ:", 360, 100, 3, White);
+
+  // Draw outline circle
+  tft.fillCircle(445, 110, 11, White);
+
+  // Color in status light
+  if(DAQStatus == true){
+    tft.fillCircle(445, 110, 7, Green);
+  } else {
+    tft.fillCircle(445, 110, 7, Red);
+  }
 }
 
 // --------------------------------------------------------
@@ -192,31 +291,38 @@ void drawBatteryVolts(float batteryVolts){
 void loop(){
 
   // RPM Gauge Test Code
-  /*
-  for(int j = 0; j < 10; j++){
-    drawRPMMeter(j*1250+1);
+  
+  for(int j = 0; j < 150; j++){
+    drawRPMMeter(j*82);
     Serial.println(rpmDots);
-    delay(400);
+    delay(5);
   }
-  */
+  
 
   // Gear Display Test Code
-  /*
+  
   for(int j = 0; j < 7; j++){
     drawGear(j);
-    delay(800);
+    delay(400);
   }
-  */
+  
 
   // Battery Voltage Test Code
-  /*
+  
   for(int j = 0; j < 15; j++){
     drawBatteryVolts(12.3 - (j * 0.1));
     Serial.println(12.3 - (j * 0.1));
-    delay(2500);
+    delay(200);
   }
-  */
+  
 
+  // ECT Test Code
+  
+  for(int j = 0; j < 360; j++){
+    drawECT((float)j);
+    delay(20);
+  }
+  
 
   // Serial Loop Test Code
   /*
@@ -258,7 +364,8 @@ void loop(){
     }
     case ECT_ID:
     {
-      //something
+      float ect = (serialData[1] << 8 | serialData[2]) * 0.1;
+      drawECT(ect);
       break;
     }
     case Speed_ID:
@@ -273,7 +380,7 @@ void loop(){
     }
     case DAQStart_ID:
     {
-      //something
+      toggleDAQStatus();
       break;
     }
     default:
