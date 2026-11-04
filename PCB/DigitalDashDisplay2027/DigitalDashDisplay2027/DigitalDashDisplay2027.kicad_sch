@@ -21520,7 +21520,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "2k"
 			(at 29.464 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21601,7 +21601,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22.1k"
+		(property "Value" "1.07M"
 			(at 21.59 115.062 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22802,7 +22802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56.2k"
+		(property "Value" "1.07M"
 			(at 55.372 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23297,7 +23297,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "2k"
 			(at 43.18 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
