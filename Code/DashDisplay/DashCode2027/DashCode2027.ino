@@ -38,6 +38,7 @@ const uint16_t Green = RGB565(0, 255, 0);
 
 
 // Serial IDs
+#define START_BYTE    0x91
 #define RPM_ID        0x81
 #define Gear_ID       0x82
 #define BattVolt_ID   0x83
@@ -45,6 +46,7 @@ const uint16_t Green = RGB565(0, 255, 0);
 #define Speed_ID      0x85
 #define Button_ID     0x86
 #define DAQStart_ID   0x87
+#define END_BYTE      '\n'
 // -------------------
 
 
@@ -291,7 +293,7 @@ void toggleDAQStatus(){
 void loop(){
 
   // RPM Gauge Test Code
-  
+  /*
   for(int j = 0; j < 150; j++){
     drawRPMMeter(j*82);
     Serial.println(rpmDots);
@@ -321,12 +323,12 @@ void loop(){
   for(int j = 0; j < 360; j++){
     drawECT((float)j);
     delay(20);
-  }
+  }*/
   
 
   // Serial Loop Test Code
-  /*
-  while(Serial.available() > 0){
+  
+  /*while(Serial.available() > 0){
     uint8_t byteReceived = Serial.read();
 
     Serial1.write(byteReceived);
@@ -334,37 +336,50 @@ void loop(){
   uint8_t *testSerialData = readIncomingSerial1();
 
   for(int i = 0; i < 3; i++){
-    Serial.println((char)serialData[i]);
+    Serial.println((char)testSerialData[i]);
   }
 
-  delay(1000);
-  */
+  delay(1000);*/
 
   uint8_t *serialData = readIncomingSerial1();
 
-  switch(serialData[0]){
+  
+  Serial.print("data0: ");
+  Serial.println(serialData[0]);
+
+  Serial.print("data1: ");
+  Serial.println(serialData[1]);
+
+  Serial.print("data2: ");
+  Serial.println(serialData[2]);
+
+  Serial.print("data3: ");
+  Serial.println(serialData[3]);
+  
+    
+  switch(serialData[1]){
 
     case RPM_ID:
     {
-      uint16_t rpm = ((uint16_t)serialData[1] << 4) | ((uint16_t)serialData[2]);
+      uint16_t rpm = ((uint16_t)serialData[2] << 8) | ((uint16_t)serialData[3]);
       drawRPMMeter(rpm);
       break;
     }
     case Gear_ID:
     {
-      uint8_t gear = serialData[1];
+      uint8_t gear = serialData[2];
       drawGear(gear);
       break;
     }
     case BattVolt_ID:
     {
-      float batt = (serialData[1] << 8 | serialData[2]) * 0.01;
+      float batt = (serialData[2] << 8 | serialData[3]) * 0.01;
       drawBatteryVolts(batt);
       break;
     }
     case ECT_ID:
     {
-      float ect = (serialData[1] << 8 | serialData[2]) * 0.1;
+      float ect = (serialData[2] << 8 | serialData[3]) * 0.1;
       drawECT(ect);
       break;
     }
@@ -385,7 +400,7 @@ void loop(){
     }
     default:
     {
-      Serial.println("Error receiving serial data");
+      
     }
   }
 }
@@ -403,17 +418,20 @@ void writeTextToScreen(String text, uint16_t x, uint16_t y, uint8_t txtSize, uin
 // Returns pointer to saved serial data
 uint8_t *readIncomingSerial1(){
   int idx = 0;
-  static uint8_t result[3];
+  static uint8_t result[4] = {0,0,0,0};
 
-  while(Serial1.available() > 0){
+  while(idx < 4 && Serial1.available()){
     uint8_t byteReceived = Serial1.read();
 
-    if(byteReceived == '\n'){
+    // Protection to ensure every message is synced to the start byte
+    if(idx == 0 && byteReceived != START_BYTE) break;
+
+    // Protection to end the loop when the end byte is reached
+    if(byteReceived == END_BYTE){
       break;
     }
 
     result[idx] = byteReceived;
-
     idx++;
   }
 
