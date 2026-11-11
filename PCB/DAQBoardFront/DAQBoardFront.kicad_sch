@@ -15229,10 +15229,6 @@
 		(at 99.06 153.67)
 		(uuid "d4ea58d9-0c7b-40a1-9dbc-4b666e74094c")
 	)
-	(no_connect
-		(at 77.47 43.18)
-		(uuid "f8de501c-f596-4c14-a416-c26bc88adbeb")
-	)
 	(wire
 		(pts
 			(xy 186.69 35.56) (xy 186.69 31.75)
@@ -16255,6 +16251,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 30.48) (xy 77.47 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e73823-bc0d-4786-8dd3-13749cffde27")
+	)
+	(wire
+		(pts
 			(xy 187.96 107.95) (xy 187.96 109.22)
 		)
 		(stroke
@@ -16842,6 +16848,16 @@
 			(type default)
 		)
 		(uuid "f6a2b689-4240-453e-95b5-b9ea03e90c8f")
+	)
+	(wire
+		(pts
+			(xy 77.47 40.64) (xy 77.47 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c7390a-b038-497c-a150-bb7e856739ac")
 	)
 	(wire
 		(pts
@@ -17552,6 +17568,16 @@
 			(justify right bottom)
 		)
 		(uuid "f657cf64-5f36-4bc1-8a2d-75ab20d8725f")
+	)
+	(label "GND"
+		(at 77.47 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f88a1b70-f258-48b1-9121-3f8c3072efe9")
 	)
 	(label "GND"
 		(at 165.1 77.47 180)
@@ -20717,6 +20743,88 @@
 			(project "DAQBoardFront"
 				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 77.47 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b80692a-5862-4b5b-a6a3-734cf968df0b")
+		(property "Reference" "R22"
+			(at 80.01 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 80.01 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 75.692 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 77.47 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6b15959-eda3-4546-9005-8d3e18e69c87")
+		)
+		(pin "2"
+			(uuid "e21a8c7d-b3be-4a75-8c0e-3c20d4c14001")
+		)
+		(instances
+			(project "DAQBoardFront"
+				(path "/b8c14199-b7a8-42b0-9649-393d2e0c6b59"
+					(reference "R22")
 					(unit 1)
 				)
 			)

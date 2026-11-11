@@ -5686,10 +5686,6 @@
 		(uuid "e0449a10-6e34-48bc-bef5-27994312e2a7")
 	)
 	(no_connect
-		(at 120.65 119.38)
-		(uuid "0f275006-fe8d-4dd8-9cea-e0a57b3b5972")
-	)
-	(no_connect
 		(at 213.36 130.81)
 		(uuid "4b9a9f5f-3e50-4063-a975-d78d9f07f649")
 	)
@@ -6175,6 +6171,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 106.68) (xy 120.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab3ad94-493d-47db-bfd9-5d6b18a17bdf")
+	)
+	(wire
+		(pts
 			(xy 195.58 115.57) (xy 213.36 115.57)
 		)
 		(stroke
@@ -6452,6 +6458,16 @@
 			(type default)
 		)
 		(uuid "a37ff176-15f5-4884-b4e6-e7a2e9fb20dd")
+	)
+	(wire
+		(pts
+			(xy 120.65 116.84) (xy 120.65 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4ccf01a-8356-4197-877c-148b6631451d")
 	)
 	(wire
 		(pts
@@ -20976,6 +20992,16 @@
 		)
 		(uuid "c46ab349-f109-42c0-87bd-00ddaaa11bf0")
 	)
+	(label "GND"
+		(at 120.65 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cf1db826-ac33-4522-bc69-80617517f9ab")
+	)
 	(label "SD_CS"
 		(at 232.41 49.53 180)
 		(effects
@@ -23187,6 +23213,88 @@
 			(project "DigitalDashDisplay2027"
 				(path "/fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0e36677-df2a-4099-b882-5319d7e3adbf")
+		(property "Reference" "R13"
+			(at 123.19 111.7599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 123.19 114.2999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 118.872 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 120.65 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a208ded2-ce0e-4ce5-9f33-bb41a56b1f5c")
+		)
+		(pin "2"
+			(uuid "eb40ebcb-5bee-4729-9a15-f09f928ed8ec")
+		)
+		(instances
+			(project "DigitalDashDisplay2027"
+				(path "/fd3c9ef8-c48c-474c-8aa9-920e9693aa71"
+					(reference "R13")
 					(unit 1)
 				)
 			)
